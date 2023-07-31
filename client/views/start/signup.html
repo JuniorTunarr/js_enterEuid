@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en ">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="icon"
+    href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+    type="image/xml+svg"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <script src="../../js/main.js" type="module"></script>
+    <title>회원가입</title>
+</head>
+<body>
+    <div class="wrapper flex justify-start items-stretch items-center flex-col flex-nowrap">
+        
+        <article class="topBat w-[320px] h-[37px]">
+            <!-- 상단 영역(시간, 배터리)
+            <header class="mainHeader locationHeader">
+                <h2 class="a11yHidden">기본 정보</h2>
+                <div class="timeInfo">
+                <time class="timeInfo__date" datetime="2023-06-25T02:26">2:26</time>
+                <ul class="celluarInfo">
+                    <li class="celluarInfo__item">
+                    <span class="sprite spriteReceptionSensitivity"></span>
+                    <p class="a11yHidden">수신감도</p>
+                    </li>
+                    <li class="celluarInfo__item">
+                    <span class="sprite spriteLte"></span>
+                    <p class="a11yHidden">데이터 종류</p>
+                    </li>
+                    <li class="celluarInfo__item">
+                    <span class="sprite spriteBattery"></span>
+                    <p class="a11yHidden">배터리 잔량</p>
+                    </li>
+                </ul>
+                </div>
+            </header>-->
+        </article>
+        <header class="categoryHeader flex justify-start items-stretch ml-2 mb-[18px] flex-row flex-nowrap">
+            <span
+            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-155px_-98px]"
+            ></span>
+        </header>
+        <div class="signUpMain"> 
+            <section class="singUpInfo text-lg font-semibold leading-[150%] pl-3 pr-[62px] py-3"><!--<section class="signUpMain__info">-->
+                <span>안녕하세요!</span>
+                <h2>휴대폰 번호로 가입해 주세요</h2>
+                <span class="signUpInfoMore text-[10px] leading-[160%]">휴대폰 번호는 안전하게 보관되며 서로에게 공개되지 않아요.</span>
+            </section>
+            <main class="signUpMessage flex flex-col justify-start items-stretch gap-3 m-auto mt-[3px] mb-3 "><!--<section class="signUpMain__phone">-->
+                <input inputmode="tel" placeholder="휴대폰 번호(-없이 숫자만 입력)" class="inputSignUpMessage rounded leading-[150%] text-sm px-3 py-2 border-[0.5px] border-solid border-black flex-col flex-nowrap"/>
+                <!--<input inputmode="tel" placeholder="휴대폰 번호(-없이 숫자만 입력)" class="signUpMain__phoneNumber/>"-->
+                <button class="signUpMessageSend rounded leading-[150%] text-[#919191] text-sm font-semibold py-2 border-[0.5px] border-solid border-[#919191] bg-[#FFFFFF]" onclick= "location.href='signUp2.html'">인증문자 받기</button>
+            </main>
+            <footer class="signUpFind text-[0.625rem] leading-[160%] text-center">
+                <span class="signUpfind">휴대폰 번호가 변경되었나요?</span>
+                <a class="signUpEmail underline">이메일로 계정 찾기</a>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

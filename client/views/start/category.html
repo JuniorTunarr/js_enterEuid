@@ -1,14 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>관심 영역 선택</title>
-  </head>
-  <body>
+    <link
+    rel="icon"
+    href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+    type="image/xml+svg"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <script src="../../js/main.js" type="module"></script>
+    <title>카테고리 페이지</title>
+</head>
+<body>
     <div class="wrapper">
-      <!-- 상단 영역(시간, 배터리)
-        <article>
+        <article class="topBat w-[320px] h-[37px]">
+            <!-- 상단 영역(시간, 배터리)
             <header class="mainHeader locationHeader">
                 <h2 class="a11yHidden">기본 정보</h2>
                 <div class="timeInfo">
@@ -28,111 +36,135 @@
                     </li>
                 </ul>
                 </div>
+            </header>-->
+        </article>
+            <header class="categoryHeader flex justify-start items-stretch ml-2 mt-[18px] mb-[18px] flex-row flex-nowrap">
+                <span
+                    class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-155px_-98px]"
+                    ></span>
+                <div class="searchContainer inline-block ml-2 border-b-[#919191] border-b border-solid">
+                    <span
+                        class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-196px_-8px]"
+                        ></span>
+                    <input type="text" placeholder="분야 (이름)로 검색 ( ex. 프론트)" class="Search w-[230px] text-[#919191] text-sm leading-[160%] border-[none]" />
+                </div>
             </header>
-        </article>-->
-      <header class="categoryHeader">
-        <div class="img">
-          <img src="./../../assets/icons/Arrow.png" alt="왼쪽 화살표" class="categoryleft" />
+            <main class="categoryMain mb-[18px] px-3">
+                <h2 class="MainTitle w-full h-[34px] text-[white] text-[10.5px] font-bold leading-[140%] mb-[18px] mx-auto px-[100px] py-2 rounded-lg border-[none] bg-[#373F67]">관심분야 선택하기</h2>
+                <div class="buttonContaner flex flex-wrap justify-around gap-x-2 gap-y-4">
+                    <button type="button" class="button flex justify-between items-center w-36 h-[3.8125rem] p-3 rounded-lg border-[none] flex-row flex-nowrap bg-[#a7a7a7]">
+                        <span class="buttonWrapper inline-flex flex-col items-start">
+                            <span class="buttonTitle text-[0.625rem] font-semibold text-[#e9e9e9] leading-[150%]">프로그래밍</span>
+                            <span class="buttonSubtitle text-lg font-semibold leading-[150%]">프론트엔드</span>
+                        </span>
+                        <span
+                            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-191px_-49px]"
+                        ></span>
+                    </button>
+                    <button type="button" class="button flex justify-between items-center w-36 h-[3.8125rem] p-3 rounded-lg border-[none] flex-row flex-nowrap bg-[#a7a7a7]">
+                        <span class="buttonWrapper inline-flex flex-col items-start">
+                            <span class="buttonTitle text-[0.625rem] font-semibold text-[#e9e9e9] leading-[150%]">프로그래밍</span>
+                            <span class="buttonSubtitle text-lg font-semibold leading-[150%]">백 엔드</span>
+                        </span>
+                        <span
+                            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-191px_-49px]"
+                        ></span>
+                    </button>
+                    <button type="button" class="button flex justify-between items-center w-36 h-[3.8125rem] p-3 rounded-lg border-[none] flex-row flex-nowrap bg-[#a7a7a7]">
+                        <span class="buttonWrapper inline-flex flex-col items-start">
+                            <span class="buttonTitle text-[0.625rem] font-semibold text-[#e9e9e9] leading-[150%]">프로그래밍</span>
+                            <span class="buttonSubtitle text-lg font-semibold leading-[150%]">리액트</span>
+                        </span>
+                        <span
+                            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-191px_-49px]"
+                        ></span>
+                    </button>
+                    <button type="button" class="buttonChecked flex justify-between items-center w-36 h-[3.8125rem] p-3 rounded-lg border-[none] flex-row flex-nowrap bg-[#373F67] text-[white]">
+                        <span class="buttonWrapper inline-flex flex-col items-start">
+                            <span class="buttonTitle text-[0.625rem] font-semibold text-[#e9e9e9] leading-[150%]">프로그래밍</span>
+                            <span class="buttonSubtitle text-lg font-semibold leading-[150%]">풀스택</span>
+                        </span>
+                        <span
+                            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-216px_-48px]"
+                        ></span>
+                    </button>
+                    <button type="button" class="button flex justify-between items-center w-36 h-[3.8125rem] p-3 rounded-lg border-[none] flex-row flex-nowrap bg-[#a7a7a7]">
+                        <span class="buttonWrapper inline-flex flex-col items-start">
+                            <span class="buttonTitle text-[0.625rem] font-semibold text-[#e9e9e9] leading-[150%]">프로그래밍</span>
+                            <span class="buttonSubtitle text-lg font-semibold leading-[150%]">알고리즘</span>
+                        </span>
+                        <span
+                            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-191px_-49px]"
+                        ></span>
+                    </button>
+                    <button type="button" class="button flex justify-between items-center w-36 h-[3.8125rem] p-3 rounded-lg border-[none] flex-row flex-nowrap bg-[#a7a7a7]">
+                        <span class="buttonWrapper inline-flex flex-col items-start">
+                            <span class="buttonTitle text-[0.625rem] font-semibold text-[#e9e9e9] leading-[150%]">프로그래밍</span>
+                            <span class="buttonSubtitle text-lg font-semibold leading-[150%]">기초지식</span>
+                        </span>
+                        <span
+                            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-191px_-49px]"
+                        ></span>
+                    </button>
+                    <button type="button" class="buttonChecked buttonChecked flex justify-between items-center w-36 h-[3.8125rem] p-3 rounded-lg border-[none] flex-row flex-nowrap bg-[#373F67] text-[white]">
+                        <span class="buttonWrapper inline-flex flex-col items-start">
+                            <span class="buttonTitle text-[0.625rem] font-semibold text-[#e9e9e9] leading-[150%]">디자인</span>
+                            <span class="buttonSubtitle text-lg font-semibold leading-[150%]">UI디자인</span>
+                        </span>
+                        <span
+                            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-216px_-48px]"
+                        ></span>
+                    </button>
+                    <button type="button" class="buttonChecked buttonChecked flex justify-between items-center w-36 h-[3.8125rem] p-3 rounded-lg border-[none] flex-row flex-nowrap bg-[#373F67] text-[white]">
+                        <span class="buttonWrapper inline-flex flex-col items-start">
+                            <span class="buttonTitle text-[0.625rem] font-semibold text-[#e9e9e9] leading-[150%]">디자인</span>
+                            <span class="buttonSubtitle text-lg font-semibold leading-[150%]">UX디자인</span>
+                        </span>
+                        <span
+                            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-216px_-48px]"
+                        ></span>
+                    </button>
+                    <button type="button" class="buttonChecked buttonChecked flex justify-between items-center w-36 h-[3.8125rem] p-3 rounded-lg border-[none] flex-row flex-nowrap bg-[#373F67] text-[white]">
+                        <span class="buttonWrapper inline-flex flex-col items-start">
+                            <span class="buttonTitle text-[0.625rem] font-semibold text-[#e9e9e9] leading-[150%]">디자인</span>
+                            <span class="buttonSubtitle text-lg font-semibold leading-[150%]">UI * UX</span>
+                        </span>
+                        <span
+                            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-216px_-48px]"
+                        ></span>
+                    </button>
+                    <button type="button" class="button flex justify-between items-center w-36 h-[3.8125rem] p-3 rounded-lg border-[none] flex-row flex-nowrap bg-[#a7a7a7]">
+                        <span class="buttonWrapper inline-flex flex-col items-start">
+                            <span class="buttonTitle text-[0.625rem] font-semibold text-[#e9e9e9] leading-[150%]">데이터</span>
+                            <span class="buttonSubtitle text-lg font-semibold leading-[150%]">데이터분석</span>
+                        </span>
+                        <span
+                            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-191px_-49px]"
+                        ></span>
+                    </button>
+                    <button type="button" class="button flex justify-between items-center w-36 h-[3.8125rem] p-3 rounded-lg border-[none] flex-row flex-nowrap bg-[#a7a7a7]">
+                        <span class="buttonWrapper inline-flex flex-col items-start">
+                            <span class="buttonTitle text-[0.625rem] font-semibold text-[#e9e9e9] leading-[150%]">데이터</span>
+                            <span class="buttonSubtitle text-lg font-semibold leading-[150%]">통계분석</span>
+                        </span>
+                        <span
+                            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-191px_-49px]"
+                        ></span>
+                    </button>
+                    <button type="button" class="button flex justify-between items-center w-36 h-[3.8125rem] p-3 rounded-lg border-[none] flex-row flex-nowrap bg-[#a7a7a7]">
+                        <span class="buttonWrapper inline-flex flex-col items-start">
+                            <span class="buttonTitle text-[0.625rem] font-semibold text-[#e9e9e9] leading-[150%]">데이터</span>
+                            <span class="buttonSubTitle text-lg font-semibold leading-[150%]">시각화</span>
+                        </span>
+                        <span
+                            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-191px_-49px]"
+                        ></span>
+                    </button>
+                </div>
+            </main>
+            <footer>
+                <button type="button" class="saveBtn w-full h-[34px] text-[white] text-[14px] font-bold leading-[140%] ml-2 mx-auto mb-[18px] px-[100px] py-2 rounded-lg border-[none] bg-[#373F67]" onclick= "location.href='signUp.html'">이대로 저장할래요</button>
+            </footer>
         </div>
-        <div class="searchContainer">
-          <i tabindex="0" class="fa-sharp fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="분야 (이름)로 검색 ( ex. 프론트)" class="Search" />
-        </div>
-      </header>
-      <main class="categoryMain">
-        <h2 class="MainTitle">관심분야를 선택해주세요!</h2>
-        <div class="buttonContaner">
-          <button type="button" class="button">
-            <span class="buttonWrapper">
-              <span class="buttonTitle">프로그래밍</span>
-              <span class="buttonSubtitle">프론트엔드</span>
-            </span>
-            <i class="fa-solid fa-plus button__img"></i>
-          </button>
-          <button type="button" class="button">
-            <span class="buttonWrapper">
-              <span class="buttonTitle">프로그래밍</span>
-              <span class="buttonSubtitle">백 엔드</span>
-            </span>
-            <i class="fa-solid fa-plus button__img"></i>
-          </button>
-          <button type="button" class="button">
-            <span class="buttonWrapper">
-              <span class="buttonTitle">프로그래밍</span>
-              <span class="buttonSubtitle">리액트</span>
-            </span>
-            <i class="fa-solid fa-plus button__img"></i>
-          </button>
-          <button type="button" class="buttonChecked">
-            <span class="buttonWrapper">
-              <span class="buttonTitle">프로그래밍</span>
-              <span class="buttonSubtitle">풀스택</span>
-            </span>
-            <i class="fa-solid fa-check"></i>
-          </button>
-          <button type="button" class="button">
-            <span class="buttonWrapper">
-              <span class="buttonTitle">프로그래밍</span>
-              <span class="buttonSubtitle">알고리즘</span>
-            </span>
-            <i class="fa-solid fa-plus button__img"></i>
-          </button>
-          <button type="button" class="button">
-            <span class="buttonWrapper">
-              <span class="buttonTitle">프로그래밍</span>
-              <span class="buttonSubtitle">기초지식</span>
-            </span>
-            <i class="fa-solid fa-plus button__img"></i>
-          </button>
-          <button type="button" class="buttonChecked">
-            <span class="buttonWrapper">
-              <span class="buttonTitle">디자인</span>
-              <span class="buttonSubtitle">UI디자인</span>
-            </span>
-            <i class="fa-solid fa-check"></i>
-          </button>
-          <button type="button" class="buttonChecked">
-            <span class="buttonWrapper">
-              <span class="buttonTitle">디자인</span>
-              <span class="buttonSubtitle">UX디자인</span>
-            </span>
-            <i class="fa-solid fa-check"></i>
-          </button>
-          <button type="button" class="buttonChecked">
-            <span class="buttonWrapper">
-              <span class="buttonTitle">디자인</span>
-              <span class="buttonSubtitle">UI * UX</span>
-            </span>
-            <i class="fa-solid fa-check"></i>
-          </button>
-          <button type="button" class="button">
-            <span class="buttonWrapper">
-              <span class="buttonTitle">데이터</span>
-              <span class="buttonSubtitle">데이터분석</span>
-            </span>
-            <i class="fa-solid fa-plus button__img"></i>
-          </button>
-          <button type="button" class="button">
-            <span class="buttonWrapper">
-              <span class="buttonTitle">데이터</span>
-              <span class="buttonSubtitle">통계분석</span>
-            </span>
-            <i class="fa-solid fa-plus button__img"></i>
-          </button>
-          <button type="button" class="button">
-            <span class="buttonWrapper">
-              <span class="buttonTitle">데이터</span>
-              <span class="buttonSubTitle">시각화</span>
-            </span>
-            <i class="fa-solid fa-plus button__img"></i>
-          </button>
-        </div>
-      </main>
-      <footer>
-        <button type="button" class="saveBtn" onclick="location.href='signUp.html'">
-          이대로 저장할래요
-        </button>
-      </footer>
-    </div>
-  </body>
+    </body>
 </html>
