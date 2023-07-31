@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
     rel="icon"
@@ -9,11 +10,11 @@
     type="image/xml+svg"
     />
     <link rel="stylesheet" href="../../css/main.css" />
+    <script src="../../js/main.js" type="module"></script>
     <title>최초 랜딩 페이지</title>
 </head>
 <body> 
-    <div class="wrapper flex flex-col w-[320px] h-[693px] bg-red-50 text-center">
-        
+    <div class="wrapper flex justify-start items-stretch items-center flex-col flex-nowrap">
         <article class="topBat w-[320px] h-[37px]">
             <!-- 상단 영역(시간, 배터리)
             <header class="mainHeader locationHeader">
@@ -37,21 +38,36 @@
                 </div>
             </header>-->
         </article>
-        <main class="startMain w-[320px] h-[400px] bg-slate-50">
-            <figure>
-                <img class="mainLogoin w-[84.5px] h-[30.73px] items-center bg-slate-500" src="svg 스프라이트로 로고 삽입(how)" alt="이듬 로고" />
-                <figcaption class="mainWrod">
-                    <p class="mainTitle">당신 곁에 엔터이듬</p>
-                    <p class="mainSummary">With EUID's 함께 성장하기 <br>함께 배우고 적용하며 성장해보세요!</p>
-                </figcaption>
-            </figure>
-        </main>
-        <section class="bottom">
-            <button class="startBt w-[301px] w-[] -green2" type="button" onclick= "location.href='category.html'">시작하기</button>
-                <p class="exist">이미 계정이 있나요?
-                    <a class="login" href="login.html">로그인</a>
-                </p>
-        </section>
+        <header class="categoryHeader flex justify-start items-stretch ml-2 mb-[18px] flex-row flex-nowrap">
+            <span
+            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-155px_-98px]"
+            ></span>
+        </header>
+        <div class="content-center"><!--12: <section class="main"> : body안에 있는 모든 태그를 묶는다.-->
+            <main class="">
+                <figure>
+                    <div class="flex flex-col mt-[200px]">
+                        <span
+                        class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[84.5px] h-[30.7px] bg-[-4px_-4px] m-auto"
+                        ></span> <!--<main__logo> : 이듬 로고 이미지 태그-->
+                    </div>
+                    <figcaption class="mainWrod flex justify-start items-stretch items-center text-[#373F67] flex-col flex-nowrap"> <!--<figcaption class="main__logoDesc"> : -->
+                        <p class="mainTitle text-lg font-bold mt-[50px] mb-[11px] text-center">당신 곁에 엔터이듬</p><!--<p class="main__logoTitle"-->
+                        <p class="mainSummary text-sm text-center">With EUID's 함께 성장하기 <br>함께 배우고 적용하며 성장해보세요!</p> <!--<p class="main__logoSummary"> : 12조는 원래 p 태그 두 게 써서 문단 나눠서 마크업-->
+                    </figcaption>
+                </figure>
+            </main>
+            <section class="bottom flex justify-start items-stretch items-center
+            flex-col flex-nowrap"> <!--<section class="bottom">-->
+                <button class="startBtn w-full h-[34px] text-[white] text-[10.5px] mt-[150px] font-bold text-sm leading-[140%] mx-auto px-[100px] py-2 rounded-lg border-[none] bg-[#373F67]" 
+                type="button" onclick= "location.href='category.html'">시작하기</button> <!--<button class="startBtn" onclick= "location.href='category.html'">-->
+                    <span class="bottomLine text-[10px] text-[#919191] mt-6 text-center">
+                        <p class="exist">이미 계정이 있나요? <!--<span class="exist">-->
+                            <a class="login text-[#373F67] ml-[13px]" href="login.html">로그인</a>
+                        </p>
+                    </span>
+            </section>
+        </div>
     </div>
 </body>
 </html>

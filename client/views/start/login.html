@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>로그인</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+        rel="icon"
+        href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+        type="image/xml+svg"
+        />
+        <link rel="stylesheet" href="../../css/main.css" />
+        <script src="../../js/main.js" type="module"></script>
+        <title>로그인 페이지</title>
+    </head>
 <body>
-    <div class="wrapper"> 
-        <!-- 상단 영역(시간, 배터리)
-        <article>
+    <div class="wrapper flex justify-start items-stretch items-center flex-col flex-nowrap"> 
+        <article class="topBat w-[320px] h-[37px]">
+            <!-- 상단 영역(시간, 배터리)
             <header class="mainHeader locationHeader">
                 <h2 class="a11yHidden">기본 정보</h2>
                 <div class="timeInfo">
@@ -28,24 +36,26 @@
                     </li>
                 </ul>
                 </div>
-            </header>
-        </article>-->
-        <nav class="logInHeader">
-            <img src="<돌아가는 화살표 sgv 스프라이트 넣기" alt="되돌아가기" />
-        </nav>
+            </header>-->
+        </article>
+        <header class="categoryHeader justify-start items-stretch ml-2 mb-[18px] flex-row flex-nowrap">
+            <span
+            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-155px_-98px]"
+            ></span>
+        </header>
         <div class="logInMain">
-            <header class="logInHeader">
+            <header class="logInHeader text-lg font-semibold leading-[150%] p-3">
                 <span>안녕하세요!</span>
-                <h2>휴대폰 번호로 로그인해주세요.</h2>
-                <span class="logInInfoMore">휴대폰 번호는 안전하게 보관되며 서로에게 공개되지 않아요.</span>
+                <h2>휴대폰 번호로 로그인해주세요. </h2>
+                <span class="logInInfoMore text-[10px] leading-[160%] font-normal">휴대폰 번호는 안전하게 보관되며 서로에게 공개되지 않아요.</span>
             </header>
-            <main class="logInMain">
-                <input inputmode="tel" placeholder="휴대폰 번호 ( -없이 숫자만 입력 )" class="inputLogInMessage" />
-                <button class="logInMessageSend" onclick= "location.href='login2.html'">인증문자 받기</button>
+            <main class="logInMain flex flex-col justify-start items-stretch gap-3 m-auto mt-[3px] mb-3 ">
+                <input inputmode="tel" placeholder="휴대폰 번호 ( -없이 숫자만 입력 )" class="inputLogInMessage rounded leading-[150%] text-sm px-3 py-2 border-[0.5px] border-solid border-black flex-col flex-nowrap" />
+                <button class="logInMessageSend rounded leading-[150%]  text-[#919191] text-sm font-semibold py-2 border-[0.5px] border-solid border-[#919191] bg-[#FFFFFF] text-black" onclick= "location.href='signup2.html'">인증문자 받기</button>
             </main>
-            <footer class="logInFooter">
+            <footer class="logInFooter text-[0.625rem] leading-[160%] text-center ml-3">
                 <span class="logInFind">휴대폰 번호가 변경되었나요?</span>
-                <a class="logInFindEmail">이메일로 계정 찾기</a>
+                <a class="logInFindEmail underline">이메일로 계정 찾기</a>
             </footer>
         </div>
     </div>
