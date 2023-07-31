@@ -5,220 +5,260 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" type="image/xml+svg" />
+  <link rel="icon" href="./../../assets/icons/favicon.ico" type="image/x-icon" sizes="16x16" />
   <!-- <link href="/dist/output.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./../../css/main.css" />
   <script src="./js/main.js" type="module"></script>
   <title>Q&A 채팅 리스트 페이지</title>
 </head>
 
 <body>
-  <h1 class="a11yHidden">QNA 채팅 리스트 페이지</h1>
+  <h1 class="sr-only">QNA 채팅 리스트 페이지</h1>
 
-  <div class="sizingWrapper">
+  <div class="wrap">
     <!-- Q&A p + qr스캔 알람 -->
     <header class="mainHeader backHeaderButton">
-      <h2 class="a11yHidden">기본 정보</h2>
-      <div class="timeInfo">
-        <time class="timeInfoDate" datetime="2023-08-02T02:26">2:26</time>
-        <ul class="celluarInfo">
-          <li class="celluarInfoItem">
-            <span class="sprite spriteReceptionSensitivity"></span>
-            <p class="a11yHidden">수신감도</p>
+      <h2 class="sr-only">기본 정보</h2>
+      <div class="flex justify-between items-center pt-2 px-4">
+        <time class="inline-block text-sm font-semibold" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="flex justify-start items-start border-0">
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"></span>
+            <span class="sr-only">수신감도</span>
           </li>
-          <li class="celluarInfoItem">
-            <span class="sprite spriteLte"></span>
-            <p class="a11yHidden">데이터 종류</p>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"></span>
+            <span class="sr-only">데이터 종류</span>
           </li>
-          <li class="celluarInfoItem">
-            <span class="sprite spriteBattery"></span>
-            <p class="a11yHidden">배터리 잔량</p>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"></span>
+            <span class="sr-only">배터리 잔량</span>
           </li>
         </ul>
       </div>
-      <ul class="statusBar">
-        <li class="statusItem qnaHeaderChatQ">
-          <p>질문채팅</p>
+      <ul class="statusBar flex mt-4 text-[16px]">
+        <li class="statusItem text-base qnaHeaderChatQ">
+          <p class="font-medium">질문채팅</p>
         </li>
-        <li class="statusItem">
-          <a href="/" class="statusLink qnaHeaderQr sprite spriteQr"><span class="a11yHidden">Q.R. 스캔</span></a>
+        <li class="statusItem pl-48">
+          <a href="/"
+            class="statusLink qnaHeaderQr sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-271px_-161px] spriteQr"><span
+              class="sr-only">Q.R. 스캔</span></a>
         </li>
-        <li class="statusItem">
-          <a href="/" class="statusLink qnaHeaderAlarm sprite spriteAlarm"><span class="a11yHidden">알람</span></a>
+        <li class="statusItem pl-3">
+          <a href="/"
+            class="statusLink qnaHeaderAlarm sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-269px_-116px] spriteAlarm"><span
+              class="sr-only">알람</span></a>
         </li>
       </ul>
-      </header>
-      
-      <nav class="commonNav">
-        <h2 class="a11yHidden">메뉴</h2>
-        <ul class="commonNavList">
-          <li class="commonNavItem">
-            <a href="./main.html" class="commonNavLink">
-              <span class="sprite spriteHome"></span>
-              <span>홈</span>
-            </a>
-          </li>
-          <li class="commonNavItem">
-            <a href="../board/board.html" class="commonNavLink">
-              <span class="sprite spriteBoard"></span>
-              <span>게시판</span>
-            </a>
-          </li>
-          <li class="commonNavItem">
-            <a href="./exchange.html" class="commonNavLink">
-              <span class="sprite spritePlace"></span>
-              <span>내 근처</span>
-            </a>
-          </li>
-          <li class="commonNavItem">
-            <a href="../qna/chatlists.html" class="commonNavLink">
-              <span class="sprite spriteFillChat"></span>
-              <span>채팅</span>
-            </a>
-          </li>
-          <li class="commonNavItem">
-            <a href="../profile/profile.html" class="commonNavLink">
-              <span class="sprite spriteMyPage"></span>
-              <span>내 정보</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      
-      <main>
-        <!-- 채팅창 목록 -->
-        <ul class="qnaChatList">
-          <!-- 채팅창 하나 -->
-          <li class="qnaChatItem">
-            <a href="chatcontent.html" class="qnaChatLink">
-              <img src="/images/Rectangle.png" alt="프로필 이미지" class="qnaChatProfileImg" />
-              <div class="qnaChatProfile">
-                <span class="qnaChatName">이드미</span>
-                <span class="qnaChatInfo">망원동 &#183;
-                  <time datetime="2023-08-02T11:30">3일 전</time>
-                </span>
-                <p class="qnaChatMessage">알겠습니다!</p>
-              </div>
-              <img src="/images/qnalistImage.png" alt="QNA 게시글 첨부 이미지" class="qnaChat__img" />
-            </a>
-          </li>
-      
-          <li class="qnaChatItem">
-            <a href="chatcontent.html" class="qnaChatLink">
-              <img src="/images/Rectangle.png" alt="프로필 이미지" class="qnaChatProfileImg" />
-              <div class="qnaChatProfile">
-                <span class="qnaChatName">멋사와 함께</span>
-                <span class="qnaChatInfo">성산제2동 &#183;
-                  <time datetime="2023-08-02T11:27">3일 전</time>
-                </span>
-                <p class="qnaChatMessage">디버깅은 해보셨어용?!</p>
-              </div>
-            </a>
-          </li>
-      
-          <li class="qnaChatItem">
-            <a href="chatcontent.html" class="qnaChatLink">
-              <img src="/images/Rectangle.png" alt="프로필 이미지" class="qnaChatProfileImg" />
-              <div class="qnaChatProfile">
-                <span class="qnaChatName">4기네이버</span>
-                <span class="qnaChatInfo">연남동 &#183;
-                  <time datetime="2023-08-02T11:20">3일 전</time>
-                </span>
-                <p class="qnaChatMessage">네이버 면접준비하러갑니다.</p>
-              </div>
-              <img src="/images/qnalistImage.png" alt="QNA 게시글 첨부 이미지" class="qnaChatImg" />
-            </a>
-          </li>
-      
-          <li class="qnaChatItem">
-            <a href="chatcontent.html" class="qnaChatLink">
-              <img src="/images/Rectangle.png" alt="프로필 이미지" class="qnaChatProfileImg" />
-              <div class="qnaChatProfile">
-                <span class="qnaChatName">크크오가즈아</span>
-                <span class="qnaChatInfo">남가좌제1동 &#183;
-                  <time datetime="2023-08-02T11:00">3일 전</time>
-                </span>
-                <p class="qnaChatMessage">넵! 알려주신대로 해보겠습니다!</p>
-              </div>
-      
-            </a>
-          </li>
-      
-          <li class="qnaChatItem">
-            <a href="chatcontent.html" class="qnaChatLink">
-              <img src="/images/Rectangle.png" alt="프로필 이미지" class="qnaChatProfileImg" />
-              <div class="qnaChatProfile">
-                <span class="qnaChatName">EUIDDDD</span>
-                <span class="qnaChatInfo">연희동 &#183;
-                  <time datetime="2023-06-26T10:52">3일 전</time>
-                </span>
-                <p class="qnaChatMessage">이 부분에서 auto layout 적용하면 되나요?</p>
-              </div>
-      
-            </a>
-          </li>
-      
-          <li class="qnaChatItem">
-            <a href="chatcontent.html" class="qnaChatLink">
-              <img src="/images/Rectangle.png" alt="프로필 이미지" class="qnaChatProfileImg" />
-              <div class="qnaChatProfile">
-                <span class="qnaChatName">피그마마보이</span>
-                <span class="qnaChatInfo">상수동 &#183;
-                  <time datetime="2023-08-02T10:41">3일 전</time>
-                </span>
-                <p class="qnaChatMessage">그러면 이 부분에서는 어떻게 해야하나요?</p>
-              </div>
-              <img src="/images/qnalistImage.png" alt="QNA 게시글 첨부 이미지" class="qnaChatImg" />
-            </a>
-          </li>
-      
-          <li class="qnaChatItem">
-            <a href="chatcontent.html" class="qnaChatLink">
-              <img src="/images/Rectangle.png" alt="프로필 이미지" class="qnaChatProfileImg" />
-              <div class="qnaChatProfile">
-                <span class="qnaChatName">카페인조아</span>
-                <span class="qnaChatInfo">연희동 &#183;
-                  <time datetime="2023-08-02T10:39">3일 전</time>
-                </span>
-                <p class="qnaChatMessage">오늘 저녁에 연회동 근처에서 만날까요?</p>
-              </div>
-              <img src="/images/qnalistImage.png" alt="QNA 게시글 첨부 이미지" class="qnaChatImg" />
-            </a>
-          </li>
-      
-          <li class="qnaChatItem">
-            <a href="chatcontent.html" class="qnaChatLink">
-              <img src="/images/Rectangle.png" alt="프로필 이미지" class="qnaChatProfileImg" />
-              <div class="qnaChatProfile">
-                <span class="qnaChatName">가보자고</span>
-                <span class="qnaChatInfo">망원동 &#183;
-                  <time datetime="2023-06-26T10:25">3일 전</time>
-                </span>
-                <p class="qnaChatMessage">aria-hidden을 여기에 적용하면 되나요?</p>
-              </div>
-              <img src="/images/qnalistImage.png" alt="QNA 게시글 첨부 이미지" class="qnaChatImg" />
-            </a>
-          </li>
-      
-          <li class="qnaChatItem">
-            <a href="chatcontent.html" class="qnaChatLink">
-              <img src="/images/Rectangle.png" alt="프로필 이미지" class="qnaChatProfileImg" />
-              <div class="qnaChatProfile">
-                <span class="qnaChatName">MACBOY</span>
-                <span class="qnaChatInfo">망원동 &#183;
-                  <time datetime="2023-06-26T10:11">3일 전</time>
-                </span>
-                <p class="qnaChatMessage">m1칩 air입니까? pro입니까?</p>
-              </div>
-              <img src="/images/qnalistImage.png" alt="QNA 게시글 첨부 이미지" class="qnaChatImg" />
-            </a>
-          </li>
-      
-        </ul>
-      
-      </main>
-      </div>
-      
-      </body>
-      
-      </html>
+    </header>
+
+    <nav>
+      <h2 class="sr-only">메뉴</h2>
+      <ul
+        class="z-10 min-w-xs max-w-xs flex justify-between gap-4 bg-white items-stretch font-normal text-[0.6875rem] fixed mx-auto pt-0 pb-2 pr-2 bottom-0 left-0 right-0 border">
+        <li class="flex-1">
+          <a href="./main.html" class="flex flex-col justify-center items-center gap-[0.1875rem] py-2">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[0px_-74px]"></span>
+            <span>홈</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a href="../board/board.html" class="flex flex-col justify-center items-center gap-[0.1875rem] py-2">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-72px_-46px]"></span>
+            <span>게시판</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a href="./exchange.html" class="flex flex-col justify-center items-center gap-[0.1875rem] py-2">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-106px_-91px]"></span>
+            <span>내 근처</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a href="../qna/chatlists.html" class="flex flex-col justify-center items-center gap-[0.1875rem] py-2">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-51px_-73px]"></span>
+            <span>채팅</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a href="../profile/profile.html" class="flex flex-col justify-center items-center gap-[0.1875rem] py-2">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-99px_-46px]"></span>
+            <span>나의 이름</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- 채팅창 목록 -->
+      <ul class="qnaChatList flex flex-col w-full justify-center">
+        <!-- 채팅창 하나 -->
+        <li class="qnaChatItem h-[4.25rem] pt-[0.8rem] pb-4 px-[1.15rem] border-[solid] border-contentSecondary">
+          <a href="chatcontent.html" class="qnaChatLink items-center flex mr-24">
+            <img src="./../../assets/images/main/qna/뉴진스1.png" alt="프로필 이미지"
+              class="qnaChatProfileImg w-[2.3rem] h-[2.3rem] bg-contentSecondary mr-4 rounded-[5rem]" />
+            <div class="qnaChatProfile shrink-0 w-full">
+              <span class="qnaChatName text-paragraph-Medium font-semiBold leading-lh-150">이드미</span>
+              <span class="qnaChatInfo text-[0.65rem] leading-lh-160">망원동 &#183;
+                <time datetime="2023-08-02T11:30">3일 전</time>
+              </span>
+              <p
+                class="qnaChatMessage overflow-hidden text-ellipsis whitespace-nowrap text-paragraph-Medium leading-lh-160">
+                알겠습니다!</p>
+            </div>
+            <img src="./../../assets/images/main/qna/게시글 첨부.png" alt="QNA 게시글 첨부 이미지" class="qnaChat__img w-9 h-9 mr-3" />
+          </a>
+        </li>
+
+        <li class="qnaChatItem h-[4.25rem] pt-[0.8rem] pb-4 px-[1.15rem] border-[solid] border-contentSecondary">
+          <a href="chatcontent.html" class="qnaChatLink items-center flex mr-24">
+            <img src="./../../assets/images/main/qna/게시판.png" alt="프로필 이미지"
+              class="qnaChatProfileImg w-[2.3rem] h-[2.3rem] bg-contentSecondary mr-4 rounded-[5rem]" />
+            <div class="qnaChatProfile shrink-0 w-full">
+              <span class="qnaChatName text-paragraph-Medium font-semiBold leading-lh-150">멋사와 함께</span>
+              <span class="qnaChatInfo text-[0.65rem] leading-lh-160">성산제2동 &#183;
+                <time datetime="2023-08-02T11:27">3일 전</time>
+              </span>
+              <p
+                class="qnaChatMessage overflow-hidden text-ellipsis whitespace-nowrap text-paragraph-Medium leading-lh-160">
+                디버깅은 해보셨어용?!</p>
+            </div>
+          </a>
+        </li>
+
+        <li class="qnaChatItem h-[4.25rem] pt-[0.8rem] pb-4 px-[1.15rem] border-[solid] border-contentSecondary">
+          <a href="chatcontent.html" class="qnaChatLink items-center flex mr-24">
+            <img src="./../../assets/images/main/qna/뉴진스2.png" alt="프로필 이미지"
+              class="qnaChatProfileImg w-[2.3rem] h-[2.3rem] bg-contentSecondary mr-4 rounded-[5rem]" />
+            <div class="qnaChatProfile shrink-0 w-full">
+              <span class="qnaChatName text-paragraph-Medium font-semiBold leading-lh-150">4기네이버</span>
+              <span class="qnaChatInfo text-[0.65rem] leading-lh-160">연남동 &#183;
+                <time datetime="2023-08-02T11:20">3일 전</time>
+              </span>
+              <p
+                class="qnaChatMessage overflow-hidden text-ellipsis whitespace-nowrap text-paragraph-Medium leading-lh-160">
+                네이버 면접준비하러갑니다.</p>
+            </div>
+            <img src="./../../assets/images/main/qna/게시글 첨부.png" alt="QNA 게시글 첨부 이미지" class="qnaChatImg w-9 h-9 ml-1" />
+          </a>
+        </li>
+
+        <li class="qnaChatItem h-[4.25rem] pt-[0.8rem] pb-4 px-[1.15rem] border-[solid] border-contentSecondary">
+          <a href="chatcontent.html" class="qnaChatLink items-center flex mr-24">
+            <img src="./../../assets/images/main/qna/게시판.png" alt="프로필 이미지"
+              class="qnaChatProfileImg  w-[2.3rem] h-[2.3rem] bg-contentSecondary mr-4 rounded-[5rem]" />
+            <div class="qnaChatProfile shrink-0 w-full">
+              <span class="qnaChatName text-paragraph-Medium font-semiBold leading-lh-150">크크오가즈아</span>
+              <span class="qnaChatInfo text-[0.65rem] leading-lh-160">남가좌제1동 &#183;
+                <time datetime="2023-08-02T11:00">3일 전</time>
+              </span>
+              <p
+                class="qnaChatMessage overflow-hidden text-ellipsis whitespace-nowrap text-paragraph-Medium leading-lh-160">
+                넵! 알려주신대로 해보겠습니다!</p>
+            </div>
+
+          </a>
+        </li>
+
+        <li class="qnaChatItem h-[4.25rem] pt-[0.8rem] pb-4 px-[1.15rem] border-[solid] border-contentSecondary">
+          <a href="chatcontent.html" class="qnaChatLink items-center flex mr-24">
+            <img src="./../../assets/images/main/qna/뉴진스3.png" alt="프로필 이미지"
+              class="qnaChatProfileImg  w-[2.3rem] h-[2.3rem] bg-contentSecondary mr-4 rounded-[5rem]" />
+            <div class="qnaChatProfile shrink-0 w-full">
+              <span class="qnaChatName text-paragraph-Medium font-semiBold leading-lh-150">EUIDDDD</span>
+              <span class="qnaChatInfo text-[0.65rem] leading-lh-160">연희동 &#183;
+                <time datetime="2023-06-26T10:52">3일 전</time>
+              </span>
+              <p
+                class="qnaChatMessage overflow-hidden text-ellipsis whitespace-nowrap text-paragraph-Medium leading-lh-160">
+                이 부분에서 auto layout 적용하면 되나요?</p>
+            </div>
+          </a>
+        </li>
+
+        <li class="qnaChatItem h-[4.25rem] pt-[0.8rem] pb-4 px-[1.15rem] border-[solid] border-contentSecondary">
+          <a href="chatcontent.html" class="qnaChatLink items-center flex mr-24">
+            <img src="./../../assets/images/main/qna/게시판.png" alt="프로필 이미지"
+              class="qnaChatProfileImg w-[2.3rem] h-[2.3rem] bg-contentSecondary mr-4 rounded-[5rem]" />
+            <div class="qnaChatProfile shrink-0 w-full">
+              <span class="qnaChatName text-paragraph-Medium font-semiBold leading-lh-150">피그마마보이</span>
+              <span class="qnaChatInfo text-[0.65rem] leading-lh-160">상수동 &#183;
+                <time datetime="2023-08-02T10:41">3일 전</time>
+              </span>
+              <p
+                class="qnaChatMessage overflow-hidden text-ellipsis whitespace-nowrap text-paragraph-Medium leading-lh-160">
+                그러면 이 부분에서는 어떻게 해야하나요?</p>
+            </div>
+            <img src="./../../assets/images/main/qna/게시글 첨부.png" alt="QNA 게시글 첨부 이미지" class="qnaChatImg w-9 h-9" />
+          </a>
+        </li>
+
+        <li class="qnaChatItem h-[4.25rem] pt-[0.8rem] pb-4 px-[1.15rem] border-[solid] border-contentSecondary">
+          <a href="chatcontent.html" class="qnaChatLink items-center flex mr-24">
+            <img src="./../../assets/images/main/qna/뉴진스4.png" alt="프로필 이미지"
+              class="qnaChatProfileImg w-[2.3rem] h-[2.3rem] bg-contentSecondary mr-4 rounded-[5rem]" />
+            <div class="qnaChatProfile shrink-0 w-full">
+              <span class="qnaChatName text-paragraph-Medium font-semiBold leading-lh-150">카페인조아</span>
+              <span class="qnaChatInfo text-[0.65rem] leading-lh-160">연희동 &#183;
+                <time datetime="2023-08-02T10:39">3일 전</time>
+              </span>
+              <p
+                class="qnaChatMessage overflow-hidden text-ellipsis whitespace-nowrap text-paragraph-Medium leading-lh-160">
+                오늘 저녁에 연회동 근처에서 만날까요?</p>
+            </div>
+            <img src="./../../assets/images/main/qna/게시글 첨부.png" alt="QNA 게시글 첨부 이미지"
+              class="qnaChatImg w-9 h-9    @apply flex flex-col w-full justify-center" />
+          </a>
+        </li>
+
+        <li class="qnaChatItem h-[4.25rem] pt-[0.8rem] pb-4 px-[1.15rem] border-[solid] border-contentSecondary">
+          <a href="chatcontent.html" class="qnaChatLink items-center flex mr-24">
+            <img src="./../../assets/images/main/qna/게시판.png" alt="프로필 이미지"
+              class="qnaChatProfileImg w-[2.3rem] h-[2.3rem] bg-contentSecondary mr-4 rounded-[5rem]" />
+            <div class="qnaChatProfile shrink-0 w-full">
+              <span class="qnaChatName text-paragraph-Medium font-semiBold leading-lh-150">가보자고</span>
+              <span class="qnaChatInfo text-[0.65rem] leading-lh-160">망원동 &#183;
+                <time datetime="2023-06-26T10:25">3일 전</time>
+              </span>
+              <p
+                class="qnaChatMessage overflow-hidden text-ellipsis whitespace-nowrap text-paragraph-Medium leading-lh-160">
+                aria-hidden을 여기에 적용하면 되나요?</p>
+            </div>
+            <img src="./../../assets/images/main/qna/게시글 첨부.png" alt="QNA 게시글 첨부 이미지" class="qnaChatImg w-9 h-9" />
+          </a>
+        </li>
+
+        <li class="qnaChatItem h-[4.25rem] pt-[0.8rem] pb-4 px-[1.15rem] border-[solid] border-contentSecondary">
+          <a href="chatcontent.html" class="qnaChatLink items-center flex mr-24">
+            <img src="./../../assets/images/main/qna/뉴진스5.png" alt="프로필 이미지"
+              class="qnaChatProfileImg w-[2.3rem] h-[2.3rem] bg-contentSecondary mr-4 rounded-[5rem]" />
+            <div class="qnaChatProfile shrink-0 w-full">
+              <span class="qnaChatName text-paragraph-Medium font-semiBold leading-lh-150">MACBOY</span>
+              <span class="qnaChatInfo text-[0.65rem] leading-lh-160">망원동 &#183;
+                <time datetime="2023-06-26T10:11">3일 전</time>
+              </span>
+              <p
+                class="qnaChatMessage overflow-hidden text-ellipsis whitespace-nowrap text-paragraph-Medium leading-lh-160">
+                m1칩 air입니까? pro입니까?</p>
+            </div>
+            <img src="./../../assets/images/main/qna/게시글 첨부.png" alt="QNA 게시글 첨부 이미지" class="qnaChatImg w-9 h-9 ml-1" />
+          </a>
+        </li>
+
+      </ul>
+
+    </main>
+  </div>
+
+</body>
+
+</html>

@@ -1,151 +1,266 @@
 <!doctype html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-      type="image/xml+svg"
-    />
-    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/main.js" type="module"></script>
-    <title>Q&A 메인페이지</title>
-  </head>
 
-    <body>
-    <header class="qnaHeader">
-    <h1 class="a11yHidden">엔터이듬 Q&A 게시판 페이지</h1>
-        <div class="sizingWrapper">
-          <!-- 로그인/보드 뒤로가기 버튼  -->
-            <div class="timeInfo">
-              <time class="timeInfoDate" datetime="2023-06-25T02:26">2:26</time>
-              <ul class="celluarInfo">
-                <li class="celluarInfoItem">
-                  <span class="sprite spriteReceptionSensitivity"></span>
-                  <p class="a11yHidden">수신감도</p>
-                </li>
-                <li class="celluarInfo__item">
-                  <span class="sprite spriteLte"></span>
-                  <p class="a11yHidden">데이터 종류</p>
-                </li>
-                <li class="celluarInfo__item">
-                  <span class="sprite spriteBattery"></span>
-                  <p class="a11yHidden">배터리 잔량</p>
-                </li>
-              </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./../../assets/icons/favicon.ico" type="image/x-icon" sizes="16x16" />
+  <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="./../../css/main.css" />
+  <script src="./js/main.js" type="module"></script>
+  <title>Q&A 메인페이지</title>
+</head>
+
+<body>
+  <header class="qnaHeader">
+    <h1 class="sr-only">엔터이듬 Q&A 게시판 페이지</h1>
+    <div class="wrap">
+      <h2 class="sr-only">기본 정보</h2>
+      <div class="flex justify-between items-center pt-2 px-4">
+        <time class="inline-block text-sm font-semibold" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="flex justify-start items-start border-0">
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"></span>
+            <span class="sr-only">수신감도</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"></span>
+            <span class="sr-only">데이터 종류</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"></span>
+            <span class="sr-only">배터리 잔량</span>
+          </li>
+        </ul>
+      </div>
+      <button
+        class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-98px] backButton mt-3 ml-1"
+        type="button"></button>
+  </header>
+
+  <nav>
+    <h2 class="sr-only">메뉴</h2>
+    <ul
+      class="z-10 min-w-xs max-w-xs flex justify-between gap-4 bg-white items-stretch font-normal text-[0.6875rem] fixed mx-auto pt-0 pb-2 pr-2 bottom-0 left-0 right-0 border">
+      <li class="flex-1">
+        <a href="./main.html" class="flex flex-col justify-center items-center gap-[0.1875rem] py-2">
+          <span
+            class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[0px_-74px]"></span>
+          <span>홈</span>
+        </a>
+      </li>
+      <li class="flex-1">
+        <a href="../board/board.html" class="flex flex-col justify-center items-center gap-[0.1875rem] py-2">
+          <span
+            class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-72px_-46px]"></span>
+          <span>게시판</span>
+        </a>
+      </li>
+      <li class="flex-1">
+        <a href="./exchange.html" class="flex flex-col justify-center items-center gap-[0.1875rem] py-2">
+          <span
+            class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-106px_-91px]"></span>
+          <span>내 근처</span>
+        </a>
+      </li>
+      <li class="flex-1">
+        <a href="../qna/chatlists.html" class="flex flex-col justify-center items-center gap-[0.1875rem] py-2">
+          <span
+            class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-51px_-73px]"></span>
+          <span>채팅</span>
+        </a>
+      </li>
+      <li class="flex-1">
+        <a href="../profile/profile.html" class="flex flex-col justify-center items-center gap-[0.1875rem] py-2">
+          <span
+            class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-99px_-46px]"></span>
+          <span>나의 이름</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- 참여중 프로필 -->
+    <div class="qnaProfile flex items-center w-full px-[1.125rem] py-3">
+      <div
+        class="qnaProfile__mini ml-[-1.2rem] flex items-center justify-center pb-[1.2rem] border-b-8 border-b-[#BDBDBD] border-solid">
+        <img class="qnaProfile__img flex items-center justify-center pl-2" src="./../../assets/images/main/qna/Q&A메인1.png"
+          alt="사용자 프로필 이미지" />
+        <p class="qnaState font-semiBold ml-4">Q&A</p>
+        <button>
+          <img src="./../../assets/images/main/qna/partIn.png" alt="참여중 표시 아이콘" class="pl-spacing-16" />
+        </button>
+      </div>
+    </div>
+    <!-- 게시글 목록  -->
+    <ul class="qnaPostList flex flex-col w-auto">
+      <li class="qnaPostItem w-full relative pl-3 pr-[5.0625rem] py-3">
+        <a href="qnaboard.html" class="qnaPostLink flex flex-col gap-[0.2rem] items-start">
+          <span class="qnaPostTopic rounded text-white text-[0.6rem] font-semiBold px-3 py-0 bg-slate-400">JS</span>
+          <p class="qnaPostTitle text-[0.8rem] text-ellipsis whitespace-nowrap overflow-hidden w-56">JS에서 함수 선언문과 표현식의
+            차이를 아직 잘 모르겠네요...</p>
+          <p
+            class="qnaPostContent text-[#B1B4C3] text-ellipsis whitespace-nowrap overflow-hidden text-[0.65rem] leading-lh-160">
+            함수 선언문과 표현식의 차이를 아직 잘 모르겠네요...</p>
+          <p class="qnaPostInfo text-contentTertiary text-[0.65rem]">북가좌동 &#183;
+            <time datetime="2023-06-24T11:39"> 2일 전</time>
+          </p>
+        </a>
+      </li>
+
+      <li class="qnaPostItem w-full relative pl-3 pr-[5.0625rem] py-3">
+        <a href="qnaboard.html" class="qnaPostLink flex flex-col gap-[0.2rem] items-start">
+          <div class="qnaPostText absolute w-[26.5rem] leading-[120%]">
+            <span
+              class="qnaPostTopic rounded text-white text-[0.6rem] font-semiBold px-3 py-0 bg-slate-400">UI&#183;UX</span>
+            <p class="qnaPostTitle text-[0.8rem] text-ellipsis whitespace-nowrap overflow-hidden w-56">아니 auto Layout
+              했는데 왜 이러냐 진짜로..</p>
+            <p
+              class="qnaPostContent text-[#B1B4C3] text-ellipsis whitespace-nowrap overflow-hidden text-[0.65rem] leading-lh-160">
+              아니 이거 묶으려고 auto Layout했는데 왜 어그러...</p>
+            <p class="qnaPostInfo text-contentTertiary text-[0.65rem]">망원동 &#183;
+              <time datetime="2023-06-24T11:39">2일 전 </time>&#183; 조회 132
+            </p>
+          </div>
+
+          <div class="qnsPostImg relative left-[15rem] top-4">
+            <img src="./../../assets/images/main/qna/Q&A메인2.png" alt="QNA 게시글 첨부 이미지" class="qnaPostImg" />
+            <div class="qnaboardEmoji flex justify-end qnaboard_first pl-3">
+              <p class="qnaPostInfo text-contentTertiary text-[0.75rem]">
+                <span
+                  class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-3.5 h-3.5 bg-[-291px_-10px] spriteRecommend"></span>
+                <span class="sr-only">추천</span>2
+              </p>
+              <p class="qnaPostInfo text-contentTertiary text-[0.75rem]">
+                <span
+                  class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-3.5 h-3.5 bg-[-266px_-10px] spriteComment"></span>
+                <span class="sr-only">댓글</span>1
+              </p>
             </div>
-      <button class="backButton" type="button">
-      <img src="./assets/icons/Icon/sprite.svg" alt="뒤로가기" class="backImg"/>  
-      </button>
-      <div class="qnaTitle">
-        <div class="qnaProfile">
-          <span class="profileHeader"></span>
-          <span class="profileName">Q&A</span>
-        </div>
-        <span class="qna__participating">
-          참여중</span>
-      </div>
-    </header>
-    
-    <main class="qnaMain">
-    <nav class="qnaNav">
-      <ul class="qnaNavList">
-        <li class="navList"><img src="./assets/icons/Icon/sprite.svg" alt="홈" /><a href="/" class="navLink">홈</a></li>
-        <li class="navList"><img src="./assets/icons/Icon/sprite.svg" alt="게시판" /><a href="/" class="navLink">게시판</a></li>
-        <li class="navList"><img src="./assets/icons/Icon/sprite.svg" alt="내 근처" /><a href="/" class="navLink">내 주변</a></li>
-        <li class="navList"><img src="./assets/icons/Icon/sprite.svg" alt="채팅" /><a href="/" class="navLink">채팅</a></li>
-        <li class="navList"><img src="./assets/icons/Icon/sprite.svg" alt="나의 이듬" /><a href="/" class="navLink">나의 이듬</a></li>
-      </ul>
-    </nav>
+        </a>
+      </li>
+
+      <li class="qnaPostItem w-full relative pl-3 pr-[5.0625rem] py-3">
+        <a href="qnaboard.html" class="qnaPostLink flex flex-col gap-[0.2rem] items-start">
+          <span class="qnaPostTopic rounded text-white text-[0.6rem] font-semiBold px-3 py-0 bg-slate-400">HTML</span>
+          <p class="qnaPostTitle text-[0.8rem] text-ellipsis whitespace-nowrap overflow-hidden w-56">웹 접근성 적용해서 코드 짜려는데
+            여기에 어떤거 넣어야 하나요?</p>
+          <p
+            class="qnaPostContent text-[#B1B4C3] text-ellipsis whitespace-nowrap overflow-hidden text-[0.65rem] leading-lh-160">
+            aria-hidden 적용하면 보이는 거 안들리는 거 맞나요?</p>
+          <p class="qnaPostInfo text-contentTertiary text-[0.65rem]">남가좌제2동 &#183;
+            <time datetime="2023-06-22T12:54">4일 전</time> &#183; 조회 19
+          </p>
+        </a>
+      </li>
+
+      <li class="qnaPostItem w-full relative pl-3 pr-[5.0625rem] py-3">
+        <a href="qnaboard.html" class="qnaPostLink flex flex-col gap-[0.2rem] items-start">
+          <div class="qnaPostText absolute w-[26.5rem] leading-[120%]">
+            <span class="qnaPostTopic rounded text-white text-[0.6rem] font-semiBold px-3 py-0 bg-slate-400">css</span>
+            <p class="qnaPostTitle text-[0.8rem] text-ellipsis whitespace-nowrap overflow-hidden w-56">CSS flex 적용했는데 왜
+              이러는지 모르겠습니다.</p>
+            <p
+              class="qnaPostContent text-[#B1B4C3] text-ellipsis whitespace-nowrap overflow-hidden text-[0.65rem] leading-lh-160">
+              flex justify-content : center 적용했는데 왜 이렇게...</p>
+            <p class="qnaPostInfo text-contentTertiary text-[0.65rem]">성산제3동 &#183;
+              <time datetime="2023-06-24T11:39">7일 전 </time>
+            </p>
+          </div>
+
+          <div class="qnsPostImg relative left-[15rem] top-4">
+            <img src="./../../assets/images/main/qna/Q&A메인2.png" alt="QNA 게시글 첨부 이미지" class="qnaPostImg" />
+            <div class="qnaboardEmoji flex justify-end qnaboard_first pl-3">
+              <p class="qnaPostInfo text-contentTertiary text-[0.75rem]">
+                <span
+                  class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-3.5 h-3.5 bg-[-291px_-10px] spriteRecommend"></span>
+                <span class="sr-only">추천</span>4
+              </p>
+              <p class="qnaPostInfo text-contentTertiary text-[0.75rem]">
+                <span
+                  class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-3.5 h-3.5 bg-[-266px_-10px] spriteComment"></span>
+                <span class="sr-only">댓글</span>2
+              </p>
+            </div>
+        </a>
+      </li>
+
+      <li class="qnaPostItem w-full relative pl-3 pr-[5.0625rem] py-3">
+        <a href="qnaboard.html" class="qnaPostLink flex flex-col gap-[0.2rem] items-start">
+          <div class="qnaPostText absolute w-[26.5rem] leading-[120%]">
+            <span
+              class="qnaPostTopic rounded text-white text-[0.6rem] font-semiBold px-3 py-0 bg-slate-400">UI&#183;UX</span>
+            <p class="qnaPostTitle text-[0.8rem] text-ellipsis whitespace-nowrap overflow-hidden w-56">Figma 하는 중인데 어두운
+              화면이면 어떻게 해야하나요?</p>
+            <p
+              class="qnaPostContent text-[#B1B4C3] text-ellipsis whitespace-nowrap overflow-hidden text-[0.65rem] leading-lh-160">
+              다른 화면 만드는데 어두운 배경이 깔리고 또 다른...</p>
+            <p class="qnaPostInfo text-contentTertiary text-[0.65rem]">북가좌동 &#183;
+              <time datetime="2023-06-24T15:20">2일 전</time>
+            </p>
+          </div>
 
 
+          <div class="qnsPostImg relative left-[15rem] top-4">
+            <img src="./../../assets/images/main/qna/Q&A메인2.png" alt="QNA 게시글 첨부 이미지" class="qnaPostImg" />
+            <div class="qnaboardEmoji flex justify-end qnaboard_first pl-3">
+              <p class="qnaPostInfo text-contentTertiary text-[0.75rem]">
+                <span
+                  class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-3.5 h-3.5 bg-[-291px_-10px] spriteRecommend"></span>
+                <span class="sr-only">추천</span>3
+              </p>
+              <p class="qnaPostInfo text-contentTertiary text-[0.75rem]">
+                <span
+                  class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-3.5 h-3.5 bg-[-266px_-10px] spriteComment"></span>
+                <span class="sr-only">댓글</span>8
+              </p>
+            </div>
+        </a>
+      </li>
 
-    <article class="qnaBoard">
-      <div class="qnaBoardItem">
-        <span class="qnaBoardLabel">JS</span>
-        <h3><a href="/">JS에서 함수 선언문과 표현식의 차이를 잘 모르겠어요ㅜㅜㅜ</a></h3>
-        <p class="qnaBoardDetail">
-          함수 선언문과 표현식의 차이를 아직 잘 모르겠네요.. 순차실행에서 차이점이 있는건가요
-        </p>
-        <p class="basicData">북가좌동 &#8226; 2일 전 </p>
-      </div>
-    </article>
 
-    <article class="qnaBoard">
-      <div class="qnaBoardItem">
-        <span class="qnaBoardLabel">UI &#8226; UX</span>
-        <h3><a href="/">아니 auto Layout 했는데 왜 이러냐 진짜 정말로</a></h3>
-        <p class="qnaBoardDetail">아니 이거 묶으려고 auto Layout 했는데 왜 어그러지는것이야진짜정말로스트레스받아서나개발자못해</p>
-        <p class="basicData">망원동 &#8226; 2일 전 &#8226; 조회 132</p>
-        <span class="qnaImage"></span>
-      </div>
-      <p class="likeCount">
-        <span class="iconThumbsup" aria-hidden="true"></span>2
-        <span class="iconComment" aria-hidden="true"></span>1
-      </p>
-    </article>
+      <li class="qnaPostItem w-full relative pl-3 pr-[5.0625rem] py-3">
+        <a href="qnaboard.html" class="qnaPostLink flex flex-col gap-[0.2rem] items-start">
+          <div class="qnaPostText absolute w-[26.5rem] leading-[120%]">
+            <span
+              class="qnaPostTopic rounded text-white text-[0.6rem] font-semiBold px-3 py-0 bg-slate-400">UI&#183;UX</span>
+            <p class="qnaPostTitle text-[0.8rem] text-ellipsis whitespace-nowrap overflow-hidden w-56">아니 auto Layout
+              했는데 왜
+              이러냐 진짜로..</p>
+            <p
+              class="qnaPostContent text-[#B1B4C3] text-ellipsis whitespace-nowrap overflow-hidden text-[0.65rem] leading-lh-160">
+              아니 이거 묶으려고 auto Layout했는데 왜 어그러...</p>
+            <p class="qnaPostInfo text-contentTertiary text-[0.65rem]">망원동 &#183;
+              <time datetime="2023-06-24T11:39">2일 전 </time>&#183; 조회 132
+            </p>
+          </div>
 
-    <article class="qnaBoard">
-      <div class="qnaBoardItem">
-        <span class="qnaBoardLabel">HTML</span>
-        <h3><a href="/">웹 접근성 적용해서 코드 짜려는데 여기...</a></h3>
-        <p class="qnaBoardDetail">
-          aria-hidden 적용하면 보이는 거 안들리는 거 맞죠?제가 맞는거죠?보셨나요?
-        </p>
-        <p class="basicData">남가좌제2동 &#8226; 4일 전 &#8226; 조회 19</p>
-      </div>
-    </article>
-    
-    
-    <article class="qnaBoard">
-      <div class="qnaBoardItem">
-        <span class="qnaBoardLabel">css</span>
-        <h3><a href="/">CSS flex 적용했는데 왜 이러는지 모르겠습니다.</a></h3>
-        <p class="qnaBoardDetail">
-          flex justify-content : center 적용했는데 왜 이렇게 끝으로감???
-        </p>
-        <p class="basicData">성산제3동 &#8226; 7일 전</p>
-      </div>
-      <p class="likeCount">
-        <span class="iconThumbsup" aria-hidden="true"></span>6
-        <span class="iconSpeech" aria-hidden="true"></span>3
-      </p>
-    </article>
-      
+          <div class="qnsPostImg relative left-[15rem] top-4">
+            <img src="./../../assets/images/main/qna/Q&A메인2.png" alt="QNA 게시글 첨부 이미지" class="qnaPostImg" />
+            <div class="qnaboardEmoji flex justify-end qnaboard_first pl-3">
+              <p class="qnaPostInfo text-contentTertiary text-[0.75rem]">
+                <span
+                  class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-3.5 h-3.5 bg-[-291px_-10px] spriteRecommend"></span>
+                <span class="sr-only">추천</span>1
+              </p>
+              <p class="qnaPostInfo text-contentTertiary text-[0.75rem]">
+                <span
+                  class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-3.5 h-3.5 bg-[-266px_-10px] spriteComment"></span>
+                <span class="sr-only">댓글</span>4
+              </p>
+            </div>
+        </a>
+      </li>
+    </ul>
 
-    <article class="qnaBoard">
-      <div class="qnaBoardItem">
-        <span class="qnaBoardLabel">UI &#8226; UX</span>
-        <h3><a href="/">Figma 하는 중인데 어두운 화면이면 어떻게 적용해야 함?</a></h3>
-        <p class="basicData">망원동 &#8226; 2일 전 </p>
-        <span class="qnaImage"></span>
-      </div>
-      <p class="likeCount">
-        <span class="iconThumbsup" aria-hidden="true"></span>1
-        <span class="iconSpeech" aria-hidden="true"></span>4
-      </p>
-    </article>
-    
-    
-    <article class="qnaBoard">
-      <div class="qnaBoardItem">
-        <span class="qnaBoardLabel">UI &#8226; UX</span>
-        <h3><a href="/">Figma 하는 중인데 어두운 화면이면 어떻게 적용해야 함?</a></h3>
-        <p class="basicData">망원동 &#8226; 2일 전 </p>
-        <span class="qnaImage"></span>
-      </div>
-      <p class="likeCount">
-        <span class="iconThumbsup" aria-hidden="true"></span>1
-        <span class="iconSpeech" aria-hidden="true"></span>4
-      </p>
-    </article>
-
-  
-    </main>
+  </main>
   </div>
 
-  </body>
+</body>
+
 </html>

@@ -1,137 +1,135 @@
 <!doctype html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-      type="image/xml+svg"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/main.js" type="module"></script>
-    <title>Q&A 게시물 페이지</title>
-  </head>
 
-  <body>
-  <h1 class="a11yHidden">QNA 게시물 페이지</h1>
-  
-  <div class="sizingWrapper">
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./../../assets/icons/favicon.ico" type="image/x-icon" sizes="16x16" />
+  <link rel="stylesheet" href="./../../css/main.css" />
+  <script src="./js/main.js" type="module"></script>
+  <title>Q&A 게시물 페이지</title>
+</head>
+
+<body>
+  <h1 class="sr-only">QNA 게시물 페이지</h1>
+
+  <div class="wrap">
+
     <!-- 메인/qna 뒤로가기 홈 공유 더보기-->
     <header class="mainHeader backHeaderButton">
-      <h2 class="a11yHidden">기본 정보</h2>
-      <div class="timeInfo">
-        <time class="timeInfoDate" datetime="2023-08-02T02:26">2:26</time>
-        <ul class="celluarInfo">
-          <li class="celluarInfoItem">
-            <span class="sprite spriteReceptionSensitivity"></span>
-            <p class="a11yHidden">수신감도</p>
+      <h2 class="sr-only">기본 정보</h2>
+      <div class="flex justify-between items-center pt-2 px-4">
+        <time class="inline-block text-sm font-semibold" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="flex justify-start items-start border-0">
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"></span>
+            <span class="sr-only">수신감도</span>
           </li>
-          <li class="celluarInfoItem">
-            <span class="sprite spriteLte"></span>
-            <p class="a11yHidden">데이터 종류</p>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"></span>
+            <span class="sr-only">데이터 종류</span>
           </li>
-          <li class="celluarInfoItem">
-            <span class="sprite spriteBattery"></span>
-            <p class="a11yHidden">배터리 잔량</p>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"></span>
+            <span class="sr-only">배터리 잔량</span>
           </li>
         </ul>
       </div>
-  
-      <ul class="statusBar">
-        <li class="statusItem">
-          <a href="/" class="statusLink backHeaderBackicon sprite spriteBack"><span
-              class="a11yHidden">뒤로가기</span></a>
-        </li>
-        <li class="statusItem backHeaderHome">
-          <a href="/" class="statusLink  sprite spriteHome"><span class="a11yHidden">홈</span></a>
-        </li>
-        <li class="statusItem">
-          <a href="/" class="statusLink backHeaderShare sprite spriteShare"><span class="a11yHidden">공유</span></a>
-        </li>
-        <li class="statusItem">
-          <a href="/" class="statusLink backHeaderMore sprite spriteMore"><span class="a11yHidden">더보기</span></a>
-        </li>
-      </ul>
+
+      <div class="relative flex justify-between items-center gap-x-2 w-full h-10 px-0.5">
+        <ul class="headerList flex w-[86px] h-[26px] justify-evenly mt-2">
+          <li class="headerItem w-[25px] h-[25px]">
+            <a class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-98px]"
+              aria-label="뒤로가기" href="#" onclick="history.back()" tabindex="0"></a>
+          </li>
+          <li class="headerItem w-[25px] h-[25px]">
+            <a class="sprite spriteHome inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-84px_-93px] ml-[-0.625rem]"
+              href="./main.html" aria-label="홈" tabindex="0"></a>
+          </li>
+        </ul>
+        <ul class="headerList flex w-[86px] h-[26px] justify-evenly mt-2">
+          <li class="headerItem w-[25px] h-[25px] pl-1.5">
+            <a class="sprite spriteShare inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-241px_-47px]"
+              aria-label="공유" href="search.html" tabindex="0"></a>
+          </li>
+          <li class="headerItem w-[25px] h-[25px]">
+            <a class="sprite spriteMore inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-254px_-255px] mr-3"
+              href="/" aria-label="더보기" tabindex="0"></a>
+          </li>
+        </ul>
+      </div>
     </header>
-  
+
     <main>
-      <div class="qnaBoardTopBox">
-        <span class="qnaBoardLabel">Q&A</span>
+      <div class="qnaBoardTopBox w-full flex flex-col items-start gap-3 ml-[0.2rem]">
+        <span
+          class="qnaBoardLabel rounded text-[white] text-[0.65rem] font-semiBold leading-lh-150 px-[0.8rem] py-0.5 bg-slate-300">Q&A</span>
         <!-- 프로필 -->
-        <div class="qnaBoardProfileBox">
-          <img class="qnaBoardProfileImg" src="/images/Rectangle.png" alt="프로필 이미지" />
-          <div class="qnaBoardProfileGroup">
-            <p class="qnaBoardProfileName">라옹</p>
-            <p class="qnaBoardProfileDetail">연희동 인증 26회 &#183;
+        <div class="qnaBoardProfileBox flex justify-center items-center">
+          <img class="qnaBoardProfileImg rounded-[50px] bg-gray-500" src="./../../assets/images/main/qna/게시판.png" alt="프로필 이미지" />
+          <div class="qnaBoardProfileGroup ml-[0.3rem]">
+            <p class="qnaBoardProfileName text-[0.65rem]">라옹</p>
+            <p class="qnaBoardProfileDetail  text-contentTertiary text-[0.65644rem] leading-lh-160">연희동 인증 26회 &#183;
               <time datetime="2023-06-26T11:39">2시간 전</time>
           </div>
           </p>
         </div>
-  
+
         <!-- 게시글 레이아웃 -->
         <dl class="qnaBoardPostContent">
-          <dt class="qnaBoardPostTitle"><span class="qIcon">Q.</span> 혹시 홍대나 연희동 주변에 프론트 스터디 하는 분</dt>
-          <dd class="qnaBoardPostDetail">계신가요? 있으면 참가하고 싶어서요!</dd>
-          <dd class="qnaBoardPostImg"><img src="/assets/bacon/contentImage.png" alt="게시글 이미지" /></dd>
+          <dt class="qnaBoardPostTitle text-[1.16rem] font-semiBold leading-lh-150 w-[17rem]"><span
+              class="qIcon  text-blue-600">Q.</span> 혹시 홍대나 연희동 주변에 프론트 스터디 하는 분</dt>
+          <dd class="qnaBoardPostDetail text-paragraph-Medium leading-lh-160 mt-[0.3rem]">계신가요? 있으면 참가하고 싶어서요!</dd>
+          <dd class="qnaBoardPostImg w-72 h-[22rem] mt-3 rounded-lg"><img src="/assets/bacon/contentImage.png"
+              alt="게시글 이미지" /></dd>
         </dl>
       </div>
-  
+
       <!-- 댓글 작성 폼 -->
-      <form name="writeCommentForm" action="/" method="POST" class="qnaBoardCommentForm">
+      <form name="writeCommentForm w-full h-[100]" action="/" method="POST" class="qnaBoardCommentForm">
         <fieldset>
-          <legend>댓글 작성 폼</legend>
-  
-          <ul class="qnaBoardBarList">
-            <li class="sprite spritePicture">
-              <a href="/" class="a11yHidden">사진</a>
+          <legend class="sr-only">댓글 작성 폼</legend>
+
+          <ul class="qnaBoardBarList flex w-80 justify-end pt-2 pb-8 px-3">
+            <li
+              class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-269px_-196px] mr-3 mt-2 spritePicture">
+              <a href="/"></a>
             </li>
-            <li class="sprite spritePlace">
-              <a href="/" class="a11yHidden">장소</a>
+            <li
+              class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-106px_-90px] mr-2 mt-2 spritePlace">
+              <a href="/"></a>
             </li>
-            <li class="qnaBoardBarInput">
-              <label for="commentInput" class="a11yHidden">댓글</label>
-              <input type="text" id="commentInput" name="commentInput" required class="commentInputBar"
+            <li class="qnaBoardBarInput mr-[0.3rem]">
+              <label for="commentInput" class="sr-only"></label>
+              <input type="text" id="commentInput" name="commentInput" required
+                class="commentInputBar text-paragraph-Medium leading-lh-160 text-contentTertiary w-56 mr-[0.7rem] px-3 py-2 rounded-[20px] border-0 bg-slate-200"
                 placeholder="댓글을 입력해주세요." />
-              <span class="sprite spriteEmoticon"></span>
             </li>
           </ul>
-  
+
         </fieldset>
       </form>
-  
-      <aside class="qnaBoardBottomBox">
-        
-        <!-- 초록색 박스 이미지로 대체? -->
-        <div class="qnaBoardAdv__box">
-          <a href="/" class="qnaBoardAdv__link">
-            <span class="sprite spriteFlag">
-              <p class="qnaBoardAdvText__main">5개의 친구질문 글에 댓글 남기기</p>
-            </span>
-            <span class="qnaBoardAdvText__sub">미션 완료 시 '우수답변가' 배지를 받아요</span>
-  
-            <div class="percentBar">
-              <img class="firstBar" src="/images/fillBar.png" alt="" />
-              <img class="greyBar" src="/images/wholeblue.png" alt="" />
-              <img class="greyBar" src="/images/wholeblue.png" alt="" />
-              <img class="greyBar" src="/images/wholeblue.png" alt="" />
-              <img class="greyBar" src="/images/wholeblue.png" alt="" />
-            </div>
-          </a>
-          <div class="medalBox">
-            <img class="medalImage" src="/images/medal.png" alt="우수답변가 배지 이미지" />
-          </div>
+
+      <aside class="qnaBoardBottomBox flex justify-center w-[18.5rem] px-0 py-2.5">
+
+        <div class="medalBox px-2.5 py-0 rounded-[10px] bg-white">
+          <img class="medalImage w-72 h-20 mt-[0.6rem] pl-3" src="./../../assets/images/main/qna/q&a_medal.png"
+            alt="우수답변가 배지 이미지" />
         </div>
-      </aside>
-  
-      <div class="qnaBoardEmpty">
-        <p class="qnaBoardEmpty__text">아직 댓글이 없어요.</p>
-        <p class="qnaBoardEmpty__text">가장 먼저 댓글을 남겨보세요.</p>
-      </div>
-  
-    </main>
   </div>
-  </body>
+  </aside>
+
+  <div class="qnaBoardEmpty flex flex-col justify-center text-center w-80 pt-[3.75rem] pb-[8.75rem] px-0">
+    <p class="qnaBoardEmptyText  text-contentTertiary text-paragraph-Medium leading-lh-160">아직 댓글이 없어요.</p>
+    <p class="qnaBoardEmptyText  text-contentTertiary text-paragraph-Medium leading-lh-160">가장 먼저 댓글을 남겨보세요.</p>
+  </div>
+
+  </main>
+  </div>
+</body>
+
 </html>

@@ -5,144 +5,167 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" type="image/xml+svg" />
+  <link rel="icon" href="./../../assets/icons/favicon.ico" type="image/x-icon" sizes="16x16" />
   <!-- <link href="/dist/output.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./../../css/main.css" />
   <script src="./js/main.js" type="module"></script>
   <title>Q&A 채팅 리스트 페이지</title>
 </head>
 
 <body>
-  <h1 class="a11yHidden">QNA 채팅 리스트 페이지</h1>
+  <h1 class="sr-only">QNA 채팅 리스트 페이지</h1>
 
-  <div class="sizingWrapper">
+  <div class="wrap w-full h-full">
     <!-- Q&A 뒤로가기 + p + 전화 더보기 -->
     <header class="mainHeader backHeaderButton">
-      <h2 class="a11yHidden">기본 정보</h2>
-      <div class="timeInfo">
-        <time class="timeInfoDate" datetime="2023-08-02T02:26">2:26</time>
-        <ul class="celluarInfo">
-          <li class="celluarInfoItem">
-            <span class="sprite spriteReceptionSensitivity"></span>
-            <p class="a11yHidden">수신감도</p>
+      <h2 class="sr-only">기본 정보</h2>
+      <div class="flex justify-between items-center pt-2 px-4">
+        <time class="inline-block text-sm font-semibold" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="flex justify-start items-start border-0">
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"></span>
+            <span class="sr-only">수신감도</span>
           </li>
-          <li class="celluarInfoItem">
-            <span class="sprite spriteLte"></span>
-            <p class="a11yHidden">데이터 종류</p>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"></span>
+            <span class="sr-only">데이터 종류</span>
           </li>
-          <li class="celluarInfoItem">
-            <span class="sprite spriteBattery"></span>
-            <p class="a11yHidden">배터리 잔량</p>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"></span>
+            <span class="sr-only">배터리 잔량</span>
           </li>
         </ul>
       </div>
-      <ul class="statusBar">
+
+      <ul class="statusBar flex">
         <li class="statusItem">
-          <a href="/" class="statuLink qnaHeaderCall sprite spriteBack"><span class="a11yHidden">뒤로가기</span></a>
+          <a href="/" class="statuLink qnaHeaderCall sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-98px] mt-3 ml-2 spriteBack" tabindex="0"><span class="sr-only">뒤로가기</span></a>
         </li>
-        <li class="statusItem statusBarQchat">
-          <p class="qnaHeaderChatName">카페인조아</p>
+        <li class="statusItem statusBarQchat ml-20">
+          <p class="qnaHeaderChatName ml-4 font-semiBold leading-lh-150">카페인조아</p>
           <span class="qnaHeaderAnswer">보통 3일 내 응답</span>
         </li>
         <li class="statusItem">
-          <a href="/" class="statusLink qnaHeaderCall sprite spriteCall"><span class="a11yHidden">통화하기</span></a>
+          <a href="/" class="statusLink qnaHeaderCall sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-234px_-163px] ml-4 mt-2 spriteCall" tabindex="0"><span class="sr-only">통화하기</span></a>
         </li>
         <li class="statusItem">
-          <a href="/" class="statusLink qnaHeaderMore sprite spriteMore"><span class="a11yHidden">더보기</span></a>
+          <a href="/" class="statusLink qnaHeaderMore sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-254px_-254px] ml-3 mt-2 spriteMore" tabindex="0"><span class="sr-only">더보기</span></a>
         </li>
       </ul>
-      </header>
-      
-      <main>
-        <div class="chatProfileBox">
-          <img src="/images/chatImage.png" alt="채팅 상대 프로필 이미지" class="qnaChatItemImg" />
-          <h3 class="chatItemDetail">
-            <div class="chatItemNamePrice">
-              <span class="chatItemSell">판매중</span>
-              <span class="chatItemName">intel mac 2017</span>
-            </div>
-            <span class="chatItemPrice">800,000</span>
-          </h3>
-        </div>
-      
-        <div class="chatButtonBox">
-          <button class="calButton">
-            <span class="sprite spriteCal"></span>
-            <p class="calMessage">약속 잡기</p>
-          </button>
-          <a href="/" class="wonButton">
-            <span class="sprite spriteWon"></span>
-            <p class="wonMessage">송금 하기</p>
-          </a>
-        </div>
-      
-        <div class="outChatNoticeBox">
-          <!-- 상단 알림 박스 -->
-          <div class="chatNoticeBox">
-            <div class="chatNoticeMessage">
-              <span class="chatNoticeBold">💸카페인조아님은 우수판매자예요.</span>
-              <span class="chatNoticeMessage">개인정보유도와 명예훼손</span>
-              <p class="chatNoticeMessage">내용은 차단될 수 있어요.
-                <a class="chatNoticeDetail" href="/">자세히 보기</a>
-              </p>
-            </div>
+    </header>
+
+    <main>
+      <div class="chatProfileBox items-center flex gap-2 mr-24 pl-3 pr-0 pt-3 pb-1.5">
+        <img src="./../../assets/images/main/qna/뉴진스5.png" alt="채팅 상대 프로필 이미지"
+          class="qnaChatItemImg w-[2.1rem] h-[2.1rem] rounded bg-slate-200" />
+        <h3 class="chatItemDetail flex flex-col items-start w-full">
+          <div class="chatItemNamePrice inline-flex">
+            <span class="chatItemSell text-black text-[0.65rem] font-semiBold leading-lh-150 mr-2">판매중</span>
+            <span class="chatItemName text-[0.65rem] leading-lh-160">intel mac 2017</span>
           </div>
-        </div>
-      
-        <div class="dateBox">
-          <time class="chatDate" datetime="2023-02-21">2023년 2월 21일</time>
-        </div>
-        <!-- 채팅들 -->
-        <div class="myChat">
-          <div class="chatContents chatSend">
-            <time class="chatTime" datetime="2023-02-21T16:30:00">오후 4:30</time>
-            <p class="chatMessage">가격 네고 가능한가요?</p>
-          </div>
-          <div class="chatContents chatSend">
-            <time class="chatTime" datetime="2023-02-21T17:32:00">오후 5:32</time>
-            <p class="chatMessage">목요일 거래 가능할까요?</p>
-          </div>
-      
-          <div class="dateBox">
-            <time class="chatDate" datetime="2023-02-22">2023년 2월 22일</time>
-          </div>
-      
-          <div class="chatContents chatSend">
-            <time class="chatTime" datetime="2023-02-22T21:16:16">오후 9:16</time>
-            <p class="chatMessage">판매 안하시나요?ㅠㅠ</p>
-          </div>
-        </div>
-      
-        <div class="dateBox">
-          <time class="chatDate" datetime="2023-03-06">2023년 3월 6일</time>
-        </div>
-      
-        <div class="yourChatBox">
-          <div class="chatContents chatReceive">
-            <p class="chatReceiveMessage">죄송해요ㅠㅠ 제가 핸드폰을 바꿔서 지금봤네요ㅠㅠ
-              팡매는 안됐는데 먼저 연락하신분이 있어서 답장 기다리고 있습니다 ㅠㅠ
-            </p>
-          </div>
-        </div>
-      
-        <!-- 메세지 입력 폼 -->
-        <form name="chatMessageForm" action="/" method="POST" class="chatMessageForm">
-          <fieldset>
-            <legend>채팅 메세지 입력 폼</legend>
-            <ul class="messageInputList">
-              <li class="sprite spritePlus"></li>
-              <li class="messageSendInput">
-                <label for="messageInput" class="a11yHidden">입력창</label>
-                <input type="text" id="messageInput" name="messageInput" class="messageInputBar" required
-                  placeholder="메세지 보내기" />
-              </li>
-              <li><input class="sprite spriteSend" type="submit" value="" /></li>
-            </ul>
-          </fieldset>
-        </form>
-      </main>
+          <span class="chatItemPrice text-[0.65rem] font-semiBold leading-lh-150">800,000</span>
+        </h3>
       </div>
-      
-      </body>
-      
-      </html>
+
+      <div
+        class="chatButtonBox text-[0.65644rem] leading-lh-160 flex gap-1 pl-3 pr-0 pt-1 pb-2 border-b-[0.3px] border-b-contentSecondary border-solid">
+        <button
+          class="calButton border text-[0.65rem] leading-lh-160 flex pl-[0.68rem] pr-3 py-[0.3rem] rounded-md border-solid border-contentSecondary bg-white">
+          <span
+            class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-4 h-4 bg-[-81px_-125px] spriteCal"></span>
+          <p class="calMessage">약속 잡기</p>
+        </button>
+        <a href="/"
+          class="wonButton border text-[0.65rem] leading-lh-160 flex pl-[0.6875rem] pr-3 py-[0.3rem] rounded-md border-solid border-contentSecondary">
+          <span
+            class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-86px_-288px] spriteWon"></span>
+          <p class="wonMessage">송금 하기</p>
+        </a>
+      </div>
+
+      <div class="outChatNoticeBox flex flex-col justify-center items-center px-0 py-2">
+        <!-- 상단 알림 박스 -->
+        <div
+          class="chatNoticeBox text-white text-[0.65rem] leading-lh-160 pl-4 pr-[1.4375rem] py-3 rounded-[10px] bg-blue-400">
+          <div class="chatNoticeMessage">
+            <span class="chatNoticeBold font-semiBold leading-lh-150 whitespace-nowrap">💸카페인조아님은 우수판매자예요.</span>
+            <span class="chatNoticeMessage">개인정보유도와 명예훼손 내용은 차단될 수 있어요.
+              <a class="chatNoticeDetail underline" href="/">자세히 보기</a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="dateBox flex text-[0.65rem] text-contentSecondary justify-center items-center pt-2.5 pb-1 px-[7.7rem]">
+        <time class="chatDate w-20 mb-[0.3rem]" datetime="2023-02-21">2023년2월21일</time>
+      </div>
+      <!-- 채팅들 -->
+      <div class="myChat flex flex-col items-end justify-center gap-2">
+        <div class="chatContents chatSend flex items-end gap-[0.2rem] px-3 py-0">
+          <time class="chatTime text-contentSecondary text-[0.65rem] leading-lh-160" datetime="2023-02-21T16:30:00">오후
+            4:30</time>
+          <p
+            class="chatMessage text-[white] text-paragraph-Medium leading-lh-160 px-3.5 py-2 rounded-[20px] bg-blue-400">
+            가격 네고 가능한가요?</p>
+        </div>
+        <div class="chatContents chatSend flex items-end gap-[0.2rem] px-3 py-0">
+          <time class="chatTime text-contentSecondary text-[0.65rem] leading-lh-160" datetime="2023-02-21T17:32:00">오후
+            5:32</time>
+          <p
+            class="chatMessage text-[white] text-paragraph-Medium leading-lh-160 px-3.5 py-2 rounded-[20px]  bg-blue-400">
+            목요일 거래 가능할까요?</p>
+        </div>
+
+
+        <div class="chatContents chatSend flex items-end gap-[0.2rem] px-3 py-0">
+          <time class="chatTime text-contentSecondary text-[0.65rem] leading-lh-160" datetime="2023-02-22T21:16:16">오후
+            9:16</time>
+          <p
+            class="chatMessage text-[white] text-paragraph-Medium leading-lh-160 px-3.5 py-2 rounded-[20px]  bg-blue-400">
+            판매 안하시나요?ㅠㅠ</p>
+        </div>
+      </div>
+
+      <div
+        class="dateBox flex text-[0.65rem] text-contentSecondary justify-center items-center pt-2.5 pb-1 px-[7.7rem]">
+        <time class="chatDate" datetime="2023-03-06">2023년 3월 6일</time>
+      </div>
+
+      <div class="yourChatBoxw-[calc(100%_-_4rem)] px-3 py-0">
+        <div class="chatContents chatReceive px-5 py-2 rounded-[20px] bg-slate-50">
+          <p class="chatReceiveMessage text-paragraph-Medium leading-lh-160">죄송해요ㅠㅠ 제가 핸드폰을 바꿔서 지금봤네요ㅠㅠ
+            팡매는 안됐는데 먼저 연락하신분이 있어서 답장 기다리고 있습니다 ㅠㅠ
+          </p>
+        </div>
+      </div>
+
+      <!-- 메세지 입력 폼 -->
+      <form name="chatMessageForm" action="/" method="POST" class="chatMessageForm z-10 min-w-xs max-w-xs flex justify-between gap-4 bg-white items-stretch font-normal text-[0.6875rem] fixed mx-auto pt-0 pb-2 pr-2 bottom-0 left-0 right-0 border">
+        <fieldset>
+          <legend class="sr-only">채팅 메세지 입력 폼</legend>
+          <ul class="messageInputList flex justify-end items-center gap-1.5 pl-2 pr-3 pt-3 pb-[1.875rem]">
+            <li
+              class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-238px_-8px] spritePlus">
+            </li>
+            <li class="messageSendInput">
+              <label for="messageInput" class="sr-only">입력창</label>
+              <input type="text" id="messageInput" name="messageInput"
+                class="messageInputBar text-paragraph-Medium leading-lh-160 text-contentTertiary w-[16rem] mt-1 px-3 py-2 rounded-[20px] border-0 bg-slate-100"
+                required placeholder="메세지 보내기" />
+            </li>
+            <li><input
+                class="sprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-4 h-4 bg-[-271px_-228px] spriteSend" tabindex="0"
+                type="submit" value="" /></li>
+          </ul>
+        </fieldset>
+      </form>
+    </main>
+  </div>
+
+</body>
+
+</html>
