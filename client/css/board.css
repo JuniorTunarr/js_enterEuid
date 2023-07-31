@@ -1,9 +1,20 @@
-dsds {
-  @apply font-semibold;
-  @apply text-[1.1625rem] font-semibold;
-  @apply align-middle;
-  @apply text-center;
-  @apply text-[0.65625rem] px-3 py-4 border-y-[0.3px] border-y-[#919191] border-solid;
-  @apply text-sm;
-  @apply translate-x-[50%,50%];
+ㅇㅇㄴㅇ {
+  @apply flex items-center px-5 py-2.5;
+  @apply bg-[right_center] bg-origin-content text-paragraph-Medium leading-lh-160 grow-[2] px-3 py-2 rounded-[20px] border-[none];
+  @apply flex justify-start items-center fixed w-full bottom-[1.875rem];
+  flex-flow: row nowrap;
+  background: #ebecf0 url(./../../icons/smile.svg) no-repeat;
+}
+.fds {
+  @apply w-full border text-center relative px-0 py-[7px] rounded-[30px] border-solid border-[#ccd0d5];
+  background: var(--fds-gray-05);
+}
+.sd {
+  @apply w-[90%] h-full border-[none];
+  background: none;
+  outline: none;
+}
+ssds {
+  @apply absolute -translate-y-2/4 cursor-pointer border-[none] right-2.5 top-2/4;
+  background: transparent;
 }

@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-      type="image/xml+svg"
-    />
+    <link rel="icon" href="./../../assets/icons/favicon.ico" type="image/x-icon" sizes="16x16" />
+
 
     <link rel="stylesheet" href="../../css/main.css" />
     <script src="../../js/main.js" type="module"></script>
@@ -23,29 +20,29 @@
         <ul class="flex justify-start items-start border-0">
           <li class="cellItem">
             <span
-              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"
             ></span>
             <span class="sr-only">수신감도</span>
           </li>
           <li class="cellItem">
             <span
-              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"
             ></span>
             <span class="sr-only">데이터 종류</span>
           </li>
           <li class="cellItem">
             <span
-              class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"
             ></span>
             <span class="sr-only">배터리 잔량</span>
           </li>
         </ul>
       </header>
 
-      <main class="px-3 pb-0 w-80">
+      <main class="pb-0 w-80 px-3">
         <div class="flex flex-nowrap flex-row items-stretch justify-between">
           <div
-            class="py-3 my-4 bg-[url('../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-98px]"
+            class="py-3 my-4 bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-98px]"
           ></div>
           
           <h2 class="subjectTitle py-4 pl-3 text-sm">EUID 피그마 스터디 하실 분 ~ <span class="font-semibold text-[rosybrown]">1</span></h2>
@@ -53,7 +50,7 @@
 
           <div class="my-2.5 pr-1">
             <div
-              class="inline-block my-4 bg-[url('../../assets/icons/Icon/board_hamburgerIcon.png')] bg-no-repeat w-5 h-5 ml-[0.1875rem] mt-0.5"
+              class="inline-block my-4 bg-[url('./../../assets/icons/board_hamburgerIcon.png')] bg-no-repeat w-5 h-5 ml-[0.1875rem] mt-0.5"
             ></div>
           </div>
 
@@ -64,29 +61,45 @@
         
       </div>
     </div>
-    <div class="chatContainer w-full h-full bg-yellow-300">
+    <nav
+      class="bottomNav bg-white sticky min-w-xs max-w-xs bottom-0 shadow-md rounded-t-lg z-10"
+    >
+     
+      <ul
+        class="z-10 min-w-xs max-w-xs flex bg-white items-stretch font-normal text-[0.6875rem] fixed mx-auto pt-0 pb-2 bottom-0 left-0 right-0 justify-between"
+      >
+        <li class="pt-2">
+          
+            <span
+              class="inline-block bg-[url('./../../assets/icons/board_chatplusIcon.png')] bg-no-repeat w-5 h-5"
+            ></span>
+            
+        </li>
+       
+        <li>
+          
+          
+            <label for="comment37"></label>
+            <input type="text" id="comment37" class="px-3 py-2 rounded-[20px] border-[none] bg-[#EBECF0] sm:w-48" placeholder="메세지를 입력하세요">
+         
+        </li>
+        <li class="pt-1.5">
+          
+          <button type="submit" class="send w-5 h-5" data-name="send">
+            <span class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-240px_-227px]"></span>
+          </button>
+          
+           
+        </li>
+      </ul>
+    </nav>
 
-
-
-    </div>
   </main>
-  <section class="chatContents fixed flex justify-start items-center w-80 h- bottom-0 flex-row flex-nowrap bg-pink-300
-  ">
-    <div class="w-full flex justify-start items-center  bottom-0 flex-row flex-nowrap  ">
-      <div class="moreContents "><img src="/" alt="/" /></div>
-      <div class="chatInput">
-        <div class="chatInputContainer">
-          <form class="">
-            <label for="chatSend"></label>
-            <input class="h-[38px] text-sm leading-[160%] grow-[2] px-3 py-2 rounded-[20px] border-[none]" type="text" id="chatSend" placeholder="메시지 보내기" />
-            <button type="submit" class="send" data-name="send">
-              <span class="chatSendSprite"></span>
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+
+
+   
+    
+
 
   </body>
 </html>
