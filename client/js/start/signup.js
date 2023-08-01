@@ -3,8 +3,8 @@ const submitButton = document.querySelector(".signUpMessageSend");
 
 // 조건1: 휴대폰 번호 입력시 랜덤한 6자리 난수 생성
 function generateRandomNumber(length) {
-    const min = Math.pow(10, length - 1);
-    const max = Math.pow(10, length) - 1;
+    //const min = Math.pow(10, length - 1);
+    //const max = Math.pow(10, length) - 1;
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
