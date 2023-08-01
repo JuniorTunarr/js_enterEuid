@@ -18,3 +18,7 @@ ssds {
   @apply absolute -translate-y-2/4 cursor-pointer border-[none] right-2.5 top-2/4;
   background: transparent;
 }
+sssd {
+  @apply overflow-auto max-h-[763px];
+  @apply overflow-scroll h-screen;
+}
