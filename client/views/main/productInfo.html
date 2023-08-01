@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Super 4y 엔터이듬</title>
+    <link rel="icon" href="./../../assets/icons/favicon.ico" type="image/x-icon" sizes="16x16" />
     <link
       rel="stylesheet preload"
       as="style"
@@ -11,6 +12,7 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css"
     />
     <link rel="stylesheet" href="./../../css/main.css" />
+    <script src="./../../js/main/productInfo.js" type="module"></script>
   </head>
 
   <body>
@@ -47,7 +49,6 @@
               class="inline-block bg-[url('./../../assets/icons/main_left.svg')] bg-no-repeat w-5 h-5"
               aria-label="뒤로가기"
               href="#"
-              onclick="history.back()"
               tabindex="0"
             ></a>
           </li>
@@ -81,150 +82,6 @@
       </div>
     </header>
 
-    <main>
-      <section class="">
-        <h2 class="sr-only" id="productLabel">상품 이미지</h2>
-        <figure class="productImage">
-          <img class="productImg" src="./../../assets/images/main/macbook.png" alt="중고맥북" />
-        </figure>
-      </section>
-      <h2 class="sr-only">판매자 정보</h2>
-      <div class="productSeller flex justify-between gap-3.5 px-0 py-2.5">
-        <dl class="flex items-center ml-3">
-          <dd>
-            <img
-              src="./../../assets/images/main/rectangle.svg"
-              alt="판매자 이미지"
-              class="sellerImage w-10 h-10 bg-[#919191] rounded-[50px]"
-            />
-          </dd>
-          <div class="flex flex-col ml-3">
-            <dt class="sellerName text-base font-semibold leading-[150%]">맥이뜸</dt>
-            <dd class="sellerLocation text-[0.6564rem] leading-[160%] font-normal text-center">
-              응암동
-            </dd>
-          </div>
-        </dl>
-
-        <div class="flex flex-col mr-3">
-          <span class="text-[#5a85ee] text-base font-semibold leading-[150%]">
-            41.2&#8451;<span class="ml-1">😀</span></span
-          >
-          <span class="text-[0.6564rem] leading-[150%] font-normal text-[#919191] text-right mr-1"
-            >매너온도</span
-          >
-        </div>
-      </div>
-
-      <section class="productInfo">
-        <h2 class="sr-only">상품 정보</h2>
-        <div class="productDetail flex flex-col pl-3 pr-0 pt-3 pb-5">
-          <span class="productTitle text-[1.1664rem] font-semibold">2020 MacBook Air M1</span>
-          <span
-            class="productRelease text-[0.6564rem] font-normal text-[#919191] inline-block mt-1.5"
-            >컴퓨터 &middot; <time datetime="2023-06-25T02:29">17분전</time></span
-          >
-          <p
-            class="productBrief w-[289px] h-[108px] text-sm font-normal leading-[160%] mt-[0.8125rem]"
-          >
-            상태 깨끗하고 좋아요 <br />
-            왜냐하면 맥을 사용할 줄 몰라서 넷플릭스용으로만 봤어요. 집근처에서 거래 희망합니다.
-          </p>
-        </div>
-      </section>
-      <section class="relatedWrap">
-        <h2 class="sr-only">관련 콘텐츠</h2>
-        <p
-          class="relatedContents w-80 px-3.5 py-3 border-t-[0.3px] border-t-[#919191] bg-[#FFF] border-l border-r shadow-sm text-base font-semibold leading-7"
-        >
-          이 글과 함께 봤어요
-        </p>
-        <ul class="relatedList flex gap-3 flex-wrap pt-1 pb-4 px-3.5">
-          <li class="relatedItem w-[138px] pb-2">
-            <a href="/" class="relatedLink">
-              <img
-                src="./../../assets/images/main/storyBg.png"
-                alt="상품이미지"
-                class="relatedImg w-full h-auto mb-1"
-              />
-              <p class="relatedTitle text-[0.6564rem] leading-[160%] font-normal mt-3 ml-0.5">
-                스타벅스 아메리카노
-              </p>
-              <p class="relatedPrice text-[0.6564rem] leading-[150%] font-semibold ml-0.5">
-                10,000원
-              </p>
-            </a>
-          </li>
-          <li class="relatedItem w-[138px] pb-2">
-            <a href="/" class="relatedLink">
-              <img
-                src="./../../assets/images/main/storyBg.png"
-                alt="상품이미지"
-                class="relatedImg w-full h-auto mb-2"
-              />
-              <p class="relatedTitle text-[0.6564rem] leading-[160%] font-normal mt-3 ml-0.5">
-                로지텍 키보드
-              </p>
-              <p class="relatedPrice text-[0.6564rem] leading-[150%] font-semibold ml-0.5">
-                80,000원
-              </p>
-            </a>
-          </li>
-          <li class="relatedItem w-[138px] pb-2">
-            <a href="/" class="relatedLink">
-              <img
-                src="./../../assets/images/main/storyBg.png"
-                alt="상품이미지"
-                class="relatedImg w-full h-auto mb-2"
-              />
-              <p class="relatedTitle text-[0.6564rem] leading-[160%] font-normal mt-3 ml-0.5">
-                스타벅스 아메리카노
-              </p>
-              <p class="relatedPrice text-[0.6564rem] leading-[150%] font-semibold ml-0.5">
-                10,000원
-              </p>
-            </a>
-          </li>
-          <li class="relatedItem w-[138px] pb-2">
-            <a href="/" class="relatedLink">
-              <img
-                src="./../../assets/images/main/storyBg.png"
-                alt="상품이미지"
-                class="relatedImg w-full h-auto mb-2"
-              />
-              <p class="relatedTitle text-[0.6564rem] leading-[160%] font-normal mt-3 ml-0.5">
-                로지텍 키보드
-              </p>
-              <p class="relatedPrice text-[0.6564rem] leading-[150%] font-semibold ml-0.5">
-                80,000원
-              </p>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="fixed bottom-0 ml-0-0 mr-0-0 w-[20rem] border border-gray-200">
-      <div
-        class="bg-white max-w-full rounded-t-lg flex w-full h-[calc(100%_-_87px)] justify-between pt-2 pb-2 z-10"
-      >
-        <div class="flex gap-3 ml-3">
-          <span
-            aria-label="좋아요"
-            class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-77px_-229px] mt-1"
-          ></span>
-          <span class="w-[1px] h-[34px] bg-[#919191]"></span>
-          <div class="flex flex-col justify-center">
-            <span class="text-[0.875rem] leading-[160%] font-normal ml-0.5">820,000원</span>
-            <span class="text-[0.6564rem] leading-[165%] font-normal ml-0.5 text-[#5a85ee]"
-              >가격 제안하기</span
-            >
-          </div>
-        </div>
-
-        <button class="p-2 rounded-lg bg-[#5A85EE] h-[37px] mr-3">
-          <span class="text-[white] text-[0.875rem]">채팅하기</span>
-        </button>
-      </div>
-    </footer>
+    <main class="productWrap"></main>
   </body>
 </html>
