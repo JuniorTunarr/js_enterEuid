@@ -1,6 +1,3 @@
-## Pull Request 제목 컨벤션 (이 부분은 제목 수정 후 삭제해주세요!)
-[PR - board CSS] main.html 헤더 구조 변경을 위한 main.css 수정
-
 ### 📝 Description
 
 ex) OO 기능 구현
