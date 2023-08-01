@@ -1,14 +1,23 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>회원가입 인증문자</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+        rel="icon"
+        href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+        type="image/xml+svg"
+        />
+        <link rel="stylesheet" href="../../css/main.css" />
+        <script src="../../js/main.js" type="module"></script>
+        <title>인증페이지</title>
+    </head>
 <body>
-    <div class="wrapper"> 
-        <!-- 상단 영역(시간, 배터리)
-        <article>
+    <div class="wrapper wrapper flex justify-start items-stretch items-center flex-col flex-nowrap"> 
+        
+        <article class="topBat w-[320px] h-[37px]">
+            <!-- 상단 영역(시간, 배터리)
             <header class="mainHeader locationHeader">
                 <h2 class="a11yHidden">기본 정보</h2>
                 <div class="timeInfo">
@@ -28,25 +37,27 @@
                     </li>
                 </ul>
                 </div>
-            </header>
-        </article>-->
-        <nav class="signInHeader2">
-            <img src="<돌아가는 화살표 sgv 스프라이트 넣기" alt="되돌아가기" />
-        </nav>
+            </header>-->
+        </article>
+        <header class="categoryHeader justify-start items-stretch ml-2 mb-[18px] flex-row flex-nowrap">
+            <span
+            class="inline-block bg-[url('./../../assets/icons/Icon/sprite.svg')] bg-no-repeat w-[20px] h-[20px] bg-[-155px_-98px]"
+            ></span>
+        </header>
         <div class="signInInMain2">
-            <main class="singInMain">
-                <input inputmode="tel" placeholder="휴대폰 번호(-없이 숫자만 입력)" class="inputsignInMessage2" />
-                <button class="signInMessageSend2" >
+            <main class="singInMain flex justify-start items-stretch gap-[13px] flex-col flex-nowrap">
+                <input inputmode="tel" placeholder="휴대폰 번호(-없이 숫자만 입력)" class="inputsignInMessage2 rounded leading-[150%] text-sm text-[#919191] px-3 py-2 border-[0.5px] border-solid border-black" />
+                <button class="signInMessageSend2 font-semibold py-2 border-[0.5px] border-solid border-[#919191] bg-[#FFFFFF]" >
                     인증문자 다시 받기
                     <span>(04분 57초)</span>
                 </button>
-                <input inputmode="tel" placeholder="인증번호 입력" class="signInMessageCheck"/>
-                    <span class="signInWarningMessage">어떤 경우에도 타인에게 공유하지마세요!</span>
+                <input inputmode="tel" placeholder="인증번호 입력" class="signInMessageCheck px-3 py-2 border-[0.5px] border-solid border-black"/>
+                    <span class="signInWarningMessage text-[10px] leading-[160%] text-[#919191]">어떤 경우에도 타인에게 공유하지마세요!</span>
             </main>
-            <footer class="signInFooter2">
-                <button class="signInStartBtn" onclick= "location.href='main.html'">동의하고 시작하기</button>
-                <a href="" class="signInStartNo">인증번호가 오지 않아요?</a>
-            </footer>
+            <div class="signInFooter2 flex justify-start items-stretch mx-3 flex-col flex-nowrap">
+                <button class="signInStartBtn text-white text-sm font-bold leading-[140%] mt-3 mb-2.5 py-3 rounded-lg border-[none] bg-[#919191]" onclick= "location.href='main.html'">동의하고 시작하기</button>
+                <a href="" class="signInStartNo text-[10px] leading-[160%] underline text-center text-[#919191]">인증번호가 오지 않아요?</a>
+            </div>
         </div>
     </div>
 </body>
