@@ -1,6 +1,6 @@
 const swiperWrapper = document.getElementById('swiper-wrapper');
 
-export default swipers = fetch('http://localhost:3000/euid')
+export const swipers = fetch('http://localhost:3000/euid')
   .then(response => response.json())
   .then(data => {
     data.forEach(slide => {
