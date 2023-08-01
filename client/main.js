@@ -1,3 +1,3 @@
-import swiper from './js/main/swiper';
+//import swiper from './js/main/swiper.js';
 
-swiper();
+//swiper();
