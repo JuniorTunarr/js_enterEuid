@@ -17,3 +17,5 @@ function handleInputChange(e) {
 }
 
 phoneInput.addEventListener("input", handleInputChange);
+
+
