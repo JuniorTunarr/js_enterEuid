@@ -45,6 +45,245 @@
       "link": "https://euid.dev/#/learning-guide"
     }
   ],
+  "story": [
+    {
+      "id": "1",
+      "name": "유동균",
+      "category": "FE",
+      "cardinality": "6기 수강생",
+      "title": "프론트엔드 성능 최적화 가이드",
+      "image": "http://localhost:5500/assets/images/main/donggyun.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "신승민",
+      "category": "FE",
+      "cardinality": "6기 수강생",
+      "title": "수강생들 기강 잡는법 제 1장1장👊",
+      "image": "http://localhost:5500/assets/images/main/seungmin.jpeg"
+    },
+    {
+      "id": "3",
+      "name": "신명화",
+      "category": "FE",
+      "cardinality": "6기 수강생",
+      "title": "안되는 문제는 함께 해결해보아요🛠️",
+      "image": "http://localhost:5500/assets/images/main/myunghwa.jpeg"
+    },
+    {
+      "id": "4",
+      "name": "강수현",
+      "category": "FE",
+      "cardinality": "6기 수강생",
+      "title": "에러를 즐길 수 있는 사람이 되자😎",
+      "image": "http://localhost:5500/assets/images/main/suhyeon.jpeg"
+    },
+    {
+      "id": "5",
+      "name": "서진만",
+      "category": "FE",
+      "cardinality": "6기 수강생",
+      "title": "포기만 안 하면, 여러분도 할 수 있습니다.🥬",
+      "image": "http://localhost:5500/assets/images/main/jinman.jpeg"
+    },
+    {
+      "id": "6",
+      "name": "노치현",
+      "category": "FE",
+      "cardinality": "6기 수강생",
+      "title": "일단 냅다 한 번 웃어보세요.😁",
+      "image": "http://localhost:5500/assets/images/main/chihyeon.jpeg"
+    },
+    {
+      "id": "7",
+      "name": "유동균",
+      "category": "FE",
+      "cardinality": "6기 수강생",
+      "title": "프론트엔드 성능 최적화 가이드",
+      "image": "http://localhost:5500/assets/images/main/donggyun.jpeg"
+    },
+    {
+      "id": "8",
+      "name": "신승민",
+      "category": "FE",
+      "cardinality": "6기 수강생",
+      "title": "수강생들 기강 잡는법 제 1장👊",
+      "image": "http://localhost:5500/assets/images/main/seungmin.jpeg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "2017 맥북 pro",
+      "createdAt": "17분전",
+      "category": "컴퓨터",
+      "status": "underReservation",
+      "price": "800,000",
+      "likes": 4,
+      "image": "http://localhost:5500/assets/images/main/product1.jpeg",
+      "alt": "맥북 pro",
+      "contents": "상태 깨끗하고 좋아요",
+      "user": {
+        "name": "맥이뜸",
+        "place": "웅암동",
+        "temp": 41.2
+      }
+    },
+    {
+      "id": 2,
+      "title": "2018 아이패드 프로",
+      "createdAt": "25분전",
+      "category": "태블릿",
+      "status": "onSale",
+      "price": "600,000",
+      "likes": 5,
+      "image": "http://localhost:5500/assets/images/main/product2.jpeg",
+      "alt": "아이패드 프로",
+      "contents": "펜슬 포함, 상태 좋음",
+      "user": {
+        "name": "아이패드매니아",
+        "place": "증산동",
+        "temp": 36.5
+      }
+    },
+    {
+      "id": 3,
+      "title": "갤럭시S21",
+      "createdAt": "1시간 전",
+      "category": "휴대폰",
+      "status": "soldOut",
+      "price": "500,000",
+      "likes": 4,
+      "image": "http://localhost:5500/assets/images/main/product3.jpeg",
+      "alt": "갤럭시S21",
+      "contents": "안 쓰는 폰 팝니다.",
+      "user": {
+        "name": "갤럭시유저",
+        "place": "홍은동",
+        "temp": 37.2
+      }
+    },
+    {
+      "id": 4,
+      "title": "키크론 K8 Retro",
+      "createdAt": "8시간 전",
+      "category": "키보드",
+      "status": "onSale",
+      "price": "350,000",
+      "likes": 9,
+      "image": "http://localhost:5500/assets/images/main/product10.jpeg",
+      "alt": "키크론 키보드",
+      "contents": "스페이스 그레이 색상, 가격조정가능",
+      "user": {
+        "name": "애플러버",
+        "place": "북가좌동",
+        "temp": 42.0
+      }
+    },
+    {
+      "id": 5,
+      "title": "2019 삼성 노트북 9",
+      "createdAt": "3시간 전",
+      "category": "컴퓨터",
+      "status": "soldOut",
+      "price": "700,000",
+      "likes": 6,
+      "image": "http://localhost:5500/assets/images/main/product5.jpeg",
+      "alt": "삼성 노트북 9",
+      "contents": "필름붙여서 상태 깨끗",
+      "user": {
+        "name": "삼성매니아",
+        "place": "연희동",
+        "temp": 36.3
+      }
+    },
+    {
+      "id": 6,
+      "title": "아이패드 에어 4세대",
+      "createdAt": "4시간 전",
+      "category": "태블릿",
+      "status": "underReservation",
+      "price": "550,000",
+      "likes": 3,
+      "image": "http://localhost:5500/assets/images/main/product6.jpeg",
+      "alt": "아이패드 에어 4세대",
+      "contents": "박스 미포함",
+      "user": {
+        "name": "태블릿마스터",
+        "place": "신촌동",
+        "temp": 38.0
+      }
+    },
+    {
+      "id": 7,
+      "title": "갤럭시 Z 플립",
+      "createdAt": "5시간 전",
+      "category": "휴대폰",
+      "status": "underReservation",
+      "price": "850,000",
+      "likes": 7,
+      "image": "http://localhost:5500/assets/images/main/product7.jpeg",
+      "alt": "갤럭시 Z 플립",
+      "contents": "거치대 포함, 상태 완전 굿",
+      "user": {
+        "name": "갤럭시플립유저",
+        "place": "상암동",
+        "temp": 35.5
+      }
+    },
+    {
+      "id": 8,
+      "title": "에어팟 맥스",
+      "createdAt": "6시간 전",
+      "category": "헤드셋",
+      "status": "soldOut",
+      "price": "400,000",
+      "likes": 2,
+      "image": "http://localhost:5500/assets/images/main/product8.jpeg",
+      "alt": "에어팟 맥스",
+      "contents": "배터리 상태 좋아요",
+      "user": {
+        "name": "스마트폰매니아",
+        "place": "대조동",
+        "temp": 40.1
+      }
+    },
+    {
+      "id": 9,
+      "title": "레노버 ThinkPad X1",
+      "createdAt": "7시간 전",
+      "category": "컴퓨터",
+      "status": "onSale",
+      "price": "1,200,000",
+      "likes": 12,
+      "image": "http://localhost:5500/assets/images/main/product9.jpeg",
+      "alt": "레노버 ThinkPad X1",
+      "contents": "사무실에서만 사용, 상태 최상",
+      "user": {
+        "name": "레노버가최고",
+        "place": "역촌동",
+        "temp": 38.6
+      }
+    },
+    {
+      "id": 10,
+      "title": "아이폰12 프로 맥스",
+      "createdAt": "2시간 전",
+      "category": "휴대폰",
+      "status": "onSale",
+      "price": "1,000,000",
+      "likes": 8,
+      "image": "http://localhost:5500/assets/images/main/product4.jpeg",
+      "alt": "아이폰12 프로 맥스",
+      "contents": "거의 새거, 빠른 판매",
+      "user": {
+        "name": "아이폰러버",
+        "place": "연남동",
+        "temp": 39.7
+      }
+    }
+  ],
+
   "profile": {
     "name": "typicode"
   },

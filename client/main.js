@@ -1,7 +1,3 @@
-import {} from './js/index.js';
+//import swiper from './js/main/swiper.js';
 
-
-
-
-
-
+//swiper();

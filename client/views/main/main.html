@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="./../../css/main.css" />
-    <script src="./../../main.js" type="module"></script>
+    <script src="./../../js/main/main.js" defer></script>
   </head>
 
   <body>
@@ -166,11 +166,8 @@
 
       <section class="swiper w-[320px] h-[255px] relative">
         <div class="swiper-container">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper" id="swiper-wrapper">
-            <!-- Slides content will be generated with JavaScript -->
-          </div>
-          <!-- If we need navigation buttons -->
+          <div class="swiper-wrapper" id="swiper-wrapper"></div>
+
           <div
             class="swiper-button-prev w-10 h-10 bg-no-repeat bg-center z-[999]"
             style="background-image: url('./../../assets/main_arrow.png')"
@@ -206,158 +203,9 @@
       </nav>
       <section class="story">
         <h2 class="sr-only">선배님 스토리</h2>
-        <ul class="flex flex-wrap mt-3 mb-[3.75rem] px-3 py-0 h-[700px] overflow-y gap-4">
-          <li class="w-[138px] pb-2">
-            <a href="#" class="">
-              <img
-                class="w-full h-auto mb-2"
-                src="./../../assets/images/main/storyBg.png"
-                alt="프로필사진"
-              />
-              <p class="leading-normal text-[0.6875rem]">
-                디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
-              </p>
-              <p class="text-[0.6875rem] leading-loose text-[#a7a7a7]">
-                UIUX <span aria-hidden="true">&#124;</span> 1기 수강생 박치열
-              </p>
-            </a>
-          </li>
-          <li class="w-[138px] pb-2">
-            <a href="#" class="">
-              <img
-                class="w-full h-auto mb-2"
-                src="../../../assets/images/main/storyBg.png"
-                alt="프로필사진"
-              />
-              <p class="leading-normal text-[0.6875rem]">
-                영문과 전공생에서 UIUX 디자이너로 취업하기까지
-              </p>
-              <p class="text-[0.6875rem] leading-loose text-[#a7a7a7]">
-                UIUX <span aria-hidden="true">&#124;</span> 3기 수강생 김진우
-              </p>
-            </a>
-          </li>
-          <li class="w-[138px] pb-2">
-            <a href="#" class="">
-              <img
-                class="w-full h-auto mb-2"
-                src="../../../assets/images/main/storyBg.png"
-                alt="프로필사진"
-              />
-              <p class="leading-normal text-[0.6875rem]">
-                7기 수강생의 삼성으로 가는 피그마 노하우
-              </p>
-              <p class="text-[0.6875rem] leading-loose text-[#a7a7a7]">
-                UIUX <span aria-hidden="true">&#124;</span> 7기 수강생 김삼성
-              </p>
-            </a>
-          </li>
-          <li class="w-[138px] pb-2">
-            <a href="#" class="leading-normal text-[0.6875rem]">
-              <img
-                class="w-full h-auto mb-2"
-                src="../../../assets/images/main/storyBg.png"
-                alt="프로필사진"
-              />
-              <p class="leading-normal text-[0.6875rem]">
-                배울 때 내가 가장 힘들었던 A-Z 야, 너도 할 수 있어!
-              </p>
-              <p class="text-[0.6875rem] leading-loose text-[#a7a7a7]">
-                UIUX <span aria-hidden="true">&#124;</span> 4기 수강생 김환휘
-              </p>
-            </a>
-          </li>
-          <li class="w-[138px] pb-2">
-            <a href="#" class="">
-              <img
-                class="w-full h-auto mb-2"
-                src="../../../assets/images/main/storyBg.png"
-                alt="프로필사진"
-              />
-              <p class="leading-normal text-[0.6875rem]">
-                나는 프론트일까? 백일까? 여전히 모르겠다면 물어봐!
-              </p>
-              <p class="text-[0.6875rem] leading-loose text-[#a7a7a7]">
-                UIUX <span aria-hidden="true">&#124;</span> 2기 수강생 최혜수
-              </p>
-            </a>
-          </li>
-          <li class="w-[138px] pb-2">
-            <a href="#" class="">
-              <img
-                class="w-full h-auto mb-2"
-                src="../../../assets/images/main/storyBg.png"
-                alt="프로필사진"
-              />
-              <p class="leading-normal text-[0.6875rem]">
-                코딩과 디자인의 그 어딘가 두가지 모두 하고 싶은 욕심쟁이
-              </p>
-              <p class="text-[0.6875rem] leading-loose text-[#a7a7a7]">
-                UIUX <span aria-hidden="true">&#124;</span> 5기 수강생 염진희
-              </p>
-            </a>
-          </li>
-          <li class="w-[138px] pb-2">
-            <a href="#" class="">
-              <img
-                class="w-full h-auto mb-2"
-                src="../../../assets/images/main/storyBg.png"
-                alt="프로필사진"
-              />
-              <p class="leading-normal text-[0.6875rem]">
-                디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
-              </p>
-              <p class="text-[0.6875rem] leading-loose text-[#a7a7a7]">
-                UIUX <span aria-hidden="true">&#124;</span> 1기 수강생 박치열
-              </p>
-            </a>
-          </li>
-          <li class="w-[138px] pb-2">
-            <a href="#" class="">
-              <img
-                class="w-full h-auto mb-2"
-                src="../../../assets/images/main/storyBg.png"
-                alt="프로필사진"
-              />
-              <p class="leading-normal text-[0.6875rem]">
-                영문과 전공생에서 UIUX 디자이너로 취업하기까지
-              </p>
-              <p class="text-[0.6875rem] leading-loose text-[#a7a7a7]">
-                UIUX <span aria-hidden="true">&#124;</span> 3기 수강생 김진우
-              </p>
-            </a>
-          </li>
-          <li class="w-[138px] pb-2">
-            <a href="#" class="">
-              <img
-                class="w-full h-auto mb-2"
-                src="../../../assets/images/main/storyBg.png"
-                alt="프로필사진"
-              />
-              <p class="leading-normal text-[0.6875rem]">
-                7기 수강생의 삼성으로 가는 피그마 노하우
-              </p>
-              <p class="text-[0.6875rem] leading-loose text-[#a7a7a7]">
-                UIUX <span aria-hidden="true">&#124;</span> 7기 수강생 김삼성
-              </p>
-            </a>
-          </li>
-          <li class="w-[138px] pb-2">
-            <a href="#" class="leading-normal text-[0.6875rem]">
-              <img
-                class="w-full h-auto mb-2"
-                src="../../../assets/images/main/storyBg.png"
-                alt="프로필사진"
-              />
-              <p class="leading-normal text-[0.6875rem]">
-                배울 때 내가 가장 힘들었던 A-Z 야, 너도 할 수 있어!
-              </p>
-              <p class="text-[0.6875rem] leading-loose text-[#a7a7a7]">
-                UIUX <span aria-hidden="true">&#124;</span> 4기 수강생 김환휘
-              </p>
-            </a>
-          </li>
-        </ul>
+        <ul
+          class="storyList flex flex-wrap mt-3 mb-[1rem] px-3 py-0 h-[600px] overflow-y gap-4"
+        ></ul>
       </section>
     </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
