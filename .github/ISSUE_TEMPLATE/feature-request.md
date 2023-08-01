@@ -1,10 +1,9 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: "[Feat]"
-labels: "➕ add, ✨ feat"
+title: '[Feat]'
+labels: '➕ add, ✨ feat'
 assignees: JuniorTunarr
-
 ---
 
 ---
