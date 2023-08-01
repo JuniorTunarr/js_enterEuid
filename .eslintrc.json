@@ -1,9 +1,9 @@
-{
+{ 
   "extends": ["airbnb", "prettier"],
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": [
-      "warn",
+      "off",
       {
         "useTabs": false,
         "endOfLine": "auto",
@@ -27,7 +27,10 @@
       }
     ],
     "no-unused-vars": "warn",
-    "no-undef": "off"
+    "no-undef": "off",
+    "import/named": "warn",
+    "no-nested-ternary": "off",
+    "quotes": ["off", "double"]
   },
   "env": {
     "browser": true,
