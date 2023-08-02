@@ -1,30 +1,42 @@
-import {getNode, getNodes, insertLast} from '../../lib/index.js';
+import {
+  addClass,
+  getNode,
+  removeClass,
+  insertLast,
+  clearContents,
+  debounce,
+  tokenize,
+  matches,
+  getNodes,
+} from '../../lib/index.js';
 
-function selectedGoods(e) {
-  const itemId = e.currentTarget.dataset.id;
-  fetch(`http://localhost:3000/products/${itemId}`)
-    .then(response => response.json())
-    .then(itemData => {
-      // 로컬 스토리지에 해당 데이터 저장
-      localStorage.setItem('selectedItem', JSON.stringify(itemData));
-    });
-}
+function filterGoods(searchValue) {
+  if (!searchValue) return;
 
-function renderExchangeGoods() {
   const listWrapper = getNode('.exchangeList');
+  clearContents(listWrapper);
 
   fetch('http://localhost:3000/products')
     .then(response => response.json())
     .then(data => {
-      data.forEach(item => {
-        // Status에 따른 분기처리
+      let filteredData;
+      const tokens = tokenize(searchValue);
+      if (tokens.length === 1 && data.find(item => item.category === searchValue)) {
+        filteredData = data.filter(item => item.category === searchValue);
+      } else {
+        filteredData = data.filter(item => {
+          const title = item.title.toLowerCase();
+          return matches(title, [...tokens]);
+        });
+      }
+
+      filteredData.forEach(item => {
         const dataStatus =
           item.status === 'underReservation'
             ? `<span class="bg-[#719cf7] text-white text-[0.625rem] font-normal inline-block leading-[1.6] mr-1 mt-1  px-1.5 py-1 rounded-[0.3125rem]">예약중</span>`
             : item.status === 'soldOut'
             ? `<span class="bg-[#9da1b4] text-white text-[0.625rem] font-semibold inline-block leading-normal mr-1 mt-1 px-1.5 py-1 rounded-[0.3125rem]">판매완료</span>`
             : `<span class="mr-0"></span>`;
-
         const listItem = `
           <li class="exchangeItem flex" data-id="${item.id}">
             <a
@@ -40,7 +52,7 @@ function renderExchangeGoods() {
                 <p class="text-sm">${item.title}</p>
                 <p class="text-[0.625rem] text-[#9da184] mt-0.5">
                   ${item.user.place}<span aria-hidden="true"> &middot; </span
-                  ><time datetime='2023-08-01T23:59'>${item.createdAt}</time>
+                  ><time datetime='2023-08-03T23:59'>${item.createdAt}</time>
                 </p>
                 <p class="mt-1">
                  ${dataStatus}
@@ -61,28 +73,40 @@ function renderExchangeGoods() {
         `;
         insertLast(listWrapper, listItem);
       });
-      const selectedItems = getNodes('.exchangeItem');
-      selectedItems.forEach(good => {
-        good.addEventListener('click', selectedGoods);
-      });
     });
 }
 
-function handleSelectChange(e) {
-  const selectedValue = e.target.value;
+const handleInput = () => {
+  const inputContent = getNode('.searchInput');
+  const keyBoardWrap = getNode('.keyBoardWrap');
 
-  // 선택된 값을 레이블에 업데이트
-  const label = document.querySelector("label[for='headerSelect']");
-  label.textContent = selectedValue;
+  const searchButtons = getNodes('.searchKeyword');
 
-  // 위 코드와 함께 아이콘 업데이트가 필요한 경우 아래 코드도 추가하세요.
-  const icon = /*html*/ `<span
-    class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-70px] ml-[0.3125rem]"
-  ></span>`;
-  label.innerHTML += icon;
-}
+  searchButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const category = button.textContent.trim();
+      filterGoods(category);
+    });
+  });
+  inputContent.addEventListener(
+    'keyup',
+    debounce(e => {
+      const inputLength = e.target.value.length;
+      if (inputLength > 0) {
+        removeClass(keyBoardWrap, 'opacity-0');
+        filterGoods(e.target.value);
+      } else {
+        addClass(keyBoardWrap, 'opacity-0');
+      }
+    }, 500),
+  );
 
-const headerSelect = document.querySelector('#headerSelect');
+  inputContent.addEventListener('focus', () => {
+    removeClass(keyBoardWrap, 'opacity-0');
+  });
+  inputContent.addEventListener('blur', () => {
+    addClass(keyBoardWrap, 'opacity-0');
+  });
+};
 
-headerSelect.addEventListener('change', handleSelectChange);
-renderExchangeGoods();
+document.addEventListener('DOMContentLoaded', handleInput);

@@ -19,7 +19,7 @@
     <header>
       <h2 class="sr-only">기본 정보</h2>
       <div class="flex justify-between items-center pt-2 px-4">
-        <time class="inline-block text-sm font-semibold" datetime="2023-06-25T02:26">2:26</time>
+        <time class="inline-block text-sm font-semibold" datetime="2023-08-01T23:59">2:26</time>
         <ul class="flex justify-start items-start border-0">
           <li class="cellItem">
             <span
@@ -240,7 +240,7 @@
               class="boardPeople flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1 text-[#9DA1B4] text-[0.625rem] font-[400]"
             >
               <img
-                src="./../../assets/Icon/board_fullpeopleIcon.png"
+                src="./../../assets/icons/board_fullpeopleIcon.png"
                 class="bd-cover w-[13px] mr-1"
                 alt="누구나 참여가능"
               />
@@ -368,13 +368,15 @@
           </p>
         </section>
       </main>
+      <button
+        onclick="javascript:void(0)"
+        class="plusButton flex items-center justify-center w-12 h-12 absolute bg-[#373f67] z-10 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] p-2 rounded-[50%] border-[none] right-[25px] bottom-[85px] hover:bg-white hover:text-[black] hover:shadow-[2px_4px_4px_2px_rgba(0,0,0,0.25)]"
+      >
+        <span class="inline-block text-white text-[2rem] mb-1"
+          ><a href="./searchActivities.html">+</a></span
+        >
+      </button>
     </div>
-    <button
-      onclick="javascript:void(0)"
-      class="plusButton flex items-center justify-center w-12 h-12 absolute bg-[#373f67] z-10 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] p-2 rounded-[50%] border-[none] right-[100px] bottom-[85px] hover:bg-white hover:text-[black] hover:shadow-[2px_4px_4px_2px_rgba(0,0,0,0.25)]"
-    >
-      <span class="inline-block text-white text-[2rem] mb-1">+</span>
-    </button>
     <nav class="bottomNav bg-white sticky min-w-xs max-w-xs bottom-0 shadow-md rounded-t-lg z-10 b">
       <h2 class="sr-only">메뉴</h2>
       <ul
@@ -399,7 +401,7 @@
             <span
               class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-72px_-46px]"
             ></span>
-            <span>게시판</span>
+            <span><a href="./index.html">게시판</a></span>
           </a>
         </li>
         <li class="flex-1">

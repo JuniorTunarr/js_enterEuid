@@ -116,7 +116,7 @@
       "id": 1,
       "title": "2017 맥북 pro",
       "createdAt": "17분전",
-      "category": "컴퓨터",
+      "category": "노트북",
       "status": "underReservation",
       "price": "800,000",
       "likes": 4,
@@ -184,7 +184,7 @@
       "id": 5,
       "title": "2019 삼성 노트북 9",
       "createdAt": "3시간 전",
-      "category": "컴퓨터",
+      "category": "노트북",
       "status": "soldOut",
       "price": "700,000",
       "likes": 6,
@@ -252,7 +252,7 @@
       "id": 9,
       "title": "레노버 ThinkPad X1",
       "createdAt": "7시간 전",
-      "category": "컴퓨터",
+      "category": "노트북",
       "status": "onSale",
       "price": "1,200,000",
       "likes": 12,
@@ -288,36 +288,202 @@
     "name": "typicode"
   },
 
-
   "study": [
-    { "id": "1",
-    "title": "멋사플레이스 클론 스터디 하실분",
-    "who": "누구나 참여 가능",
-    "date": "오늘, 오후 7:00"
-   },
-   { "id": "2",
-    "title": "엔터이듬 클론 프로젝트 오프라인으로 하실분!",
-    "who": "25-35세 | 여자만 가능",
-    "date": "5월1일 -14일, 오후 4:00"
-   },
-   { "id": "3",
-    "title": "알고리즘 매일 아침마다 인증할 분",
-    "who": "25-35세 | 여자만 가능",
-    "date": "5월1일 -14일, 오후 4:00"
-   },
-   { "id": "4",
-    "title": "멋사플레이스 클론 코딩 스터디 하실분 제발와줘",
-    "who": "25 누구나 참여 가능",
-    "date": "오늘, 오후 7:00"
-   },
-   { "id": "5",
-    "title": "엔터이듬 클론 프로젝트 오프라인으로 하실분!",
-    "who": "25-35세 | 여자만 가능",
-    "date": "5월1일 -14일, 오후 4:00"
-   }
-
-
-
+    {"id": "1", "title": "멋사플레이스 클론 스터디 하실분", "who": "누구나 참여 가능", "date": "오늘, 오후 7:00"},
+    {"id": "2", "title": "엔터이듬 클론 프로젝트 오프라인으로 하실분!", "who": "25-35세 | 여자만 가능", "date": "5월1일 -14일, 오후 4:00"},
+    {"id": "3", "title": "알고리즘 매일 아침마다 인증할 분", "who": "25-35세 | 여자만 가능", "date": "5월1일 -14일, 오후 4:00"},
+    {"id": "4", "title": "멋사플레이스 클론 코딩 스터디 하실분 제발와줘", "who": "25 누구나 참여 가능", "date": "오늘, 오후 7:00"},
+    {"id": "5", "title": "엔터이듬 클론 프로젝트 오프라인으로 하실분!", "who": "25-35세 | 여자만 가능", "date": "5월1일 -14일, 오후 4:00"}
+  ],
+  "chatlist": [
+    {
+      "id": 1,
+      "user": {
+        "name": "이드미",
+        "place": "망원동",
+        "createdAt": "3일 전"
+      },
+      "chat": "알겠습니다!",
+      "image": "http://localhost:5500/assets/images/main/qna/new1.png",
+      "alt": "본인의 프로필 사진",
+      "attachment": "http://localhost:5500/assets/images/main/qna/boardImage.png",
+      "attachmentAlt": "대화중 받은 첨부 파일"
+    },
+    {
+      "id": 2,
+      "user": {
+        "name": "멋사와 함께",
+        "place": "성산제2동",
+        "createdAt": "3일 전"
+      },
+      "chat": "디버깅은 해보셨어용?",
+      "image": "http://localhost:5500/assets/images/main/qna/profileImage.png",
+      "alt": "본인의 프로필 사진"
+    },
+    {
+      "id": 3,
+      "user": {
+        "name": "4기네이버",
+        "place": "연남동",
+        "createdAt": "3일 전"
+      },
+      "chat": "알겠습니다!",
+      "image": "http://localhost:5500/assets/images/main/qna/new2.png",
+      "alt": "본인의 프로필 사진",
+      "attachment": "http://localhost:5500/assets/images/main/qna/boardImage.png",
+      "attachmentAlt": "대화중 받은 첨부 파일"
+    },
+    {
+      "id": 4,
+      "user": {
+        "name": "크크오가즈아",
+        "place": "남가좌제1동",
+        "createdAt": "3일 전"
+      },
+      "chat": "넵! 알려주신대로 해볼게...",
+      "image": "http://localhost:5500/assets/images/main/qna/profileImage.png",
+      "alt": "본인의 프로필 사진"
+    },
+    {
+      "id": 5,
+      "user": {
+        "name": "EUIDDDD",
+        "place": "연희동",
+        "createdAt": "3일 전"
+      },
+      "chat": "이 부분에서 auto layout할 때 ",
+      "image": "http://localhost:5500/assets/images/main/qna/new3.png",
+      "alt": "본인의 프로필 사진"
+    },
+    {
+      "id": 6,
+      "user": {
+        "name": "피그마마보이",
+        "place": "상수동",
+        "createdAt": "3일 전"
+      },
+      "chat": "그러면 이 부분에서는 이렇게 진행하면 되나요?!",
+      "image": "http://localhost:5500/assets/images/main/qna/profileImage.png",
+      "alt": "본인의 프로필 사진"
+    },
+    {
+      "id": 7,
+      "user": {
+        "name": "카페인조아",
+        "place": "연희동",
+        "createdAt": "3일 전"
+      },
+      "chat": "오늘 저녁에 연희근처에서 오프라인 미팅 할까요?",
+      "image": "http://localhost:5500/assets/images/main/qna/new4.png",
+      "alt": "본인의 프로필 사진",
+      "attachment": "http://localhost:5500/assets/images/main/qna/boardImage.png",
+      "attachmentAlt": "대화중 받은 첨부 파일"
+    },
+    {
+      "id": 8,
+      "user": {
+        "name": "가보자고",
+        "place": "망원동",
+        "createdAt": "3일 전"
+      },
+      "chat": "aria-hidden여기서 하면 이렇게 ?",
+      "image": "http://localhost:5500/assets/images/main/qna/profileImage.png",
+      "alt": "본인의 프로필 사진",
+      "attachment": "http://localhost:5500/assets/images/main/qna/boardImage.png",
+      "attachmentAlt": "대화중 받은 첨부 파일"
+    },
+    {
+      "id": 9,
+      "user": {
+        "name": "4기네이버",
+        "place": "연남동",
+        "createdAt": "3일 전"
+      },
+      "chat": "알겠습니다!",
+      "image": "http://localhost:5500/assets/images/main/qna/new5.png",
+      "alt": "본인의 프로필 사진",
+      "attachment": "http://localhost:5500/assets/images/main/qna/boardImage.png",
+      "attachmentAlt": "대화중 받은 첨부 파일"
+    },
+    {
+      "id": 10,
+      "user": {
+        "name": "MACBOY",
+        "place": "망원동",
+        "createdAt": "3일 전"
+      },
+      "chat": "m1칩 air입니까? pro입니까?",
+      "image": "http://localhost:5500/assets/images/main/qna/profileImage.png",
+      "alt": "본인의 프로필 사진",
+      "attachment": "http://localhost:5500/assets/images/main/qna/boardImage.png",
+      "attachmentAlt": "대화중 받은 첨부 파일"
+    }
+  ],
+  "qnaMain": [
+    {
+      "id": 1,
+      "label": "JS",
+      "title": "JS 함수에서 함수 선언문과 표현식의 차이를...",
+      "detail": "함수 선언문과 표현식의 차이를 아직 잘 모르겠네요...",
+      "place": "북가좌동",
+      "createdAt": "2일 전"
+    },
+    {
+      "id": 2,
+      "label": "UXUI",
+      "title": "아니 auto Layout 했는데 왜 이러냐 진...",
+      "detail": "아니 이거 묶으려고 auto Layout 했는데 왜 어그러...",
+      "place": "망원동",
+      "createdAt": "2일 전",
+      "views": "132",
+      "like": "2",
+      "comment": "1",
+      "image": "http://localhost:5500/assets/images/main/qna/boardImage.png",
+      "alt": "게시글에 첨부한 이미지 파일"
+    },
+    {
+      "id": 3,
+      "label": "HTML",
+      "title": "웹 접근성 적용해서 코드 짜려는데 여기서 aria-hidden 넣는 거 맞아?",
+      "detail": "aria-hidden 적용하면 보이는 거 안들리는 거 맞...",
+      "place": "남가좌제2동",
+      "createdAt": "4일 전",
+      "views": "19"
+    },
+    {
+      "id": 4,
+      "label": "CSS",
+      "title": "CSS flex 적용했는데 왜 이러는지 모르겠습니다.",
+      "detail": "flex justify-content : center 적용했는데 왜 이렇게...",
+      "place": "성산제3동",
+      "createdAt": "7일 전",
+      "views": "132",
+      "like": "6",
+      "comment": "3"
+    },
+    {
+      "id": 5,
+      "label": "UXUI",
+      "title": "Figma 하는 중인데 어두운 화면이면 어...",
+      "detail": "다른 화면 만드는데 어두운 배경이 깔리고 또 다른 화...",
+      "place": "북가좌동",
+      "createdAt": "2일 전",
+      "like": "1",
+      "comment": "4",
+      "image": "http://localhost:5500/assets/images/main/qna/boardImage.png",
+      "alt": "게시글에 첨부한 이미지 파일"
+    },
+    {
+      "id": 6,
+      "label": "UXUI",
+      "title": "Figma 하는 중인데 어두운 화면이면 어...",
+      "detail": "다른 화면 만드는데 어두운 배경이 깔리고 또 다른 화...",
+      "place": "북가좌동",
+      "createdAt": "2일 전",
+      "like": "1",
+      "comment": "4",
+      "image": "http://localhost:5500/assets/images/main/qna/boardImage.png",
+      "alt": "게시글에 첨부한 이미지 파일"
+    }
   ]
-
 }
