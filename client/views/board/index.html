@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+      type="image/xml+svg"
+    />
+
+    <link rel="stylesheet" href="../../css/main.css" />
+    <script src="../../js/main.js" type="module"></script>
+    <title>project</title>
+  </head>
+
+  <body>
+    <header>
+      <h2 class="sr-only">기본 정보</h2>
+      <div class="flex justify-between items-center pt-2 px-4">
+        <time class="inline-block text-sm font-semibold" datetime="2023-08-01T23:59">2:26</time>
+        <ul class="flex justify-start items-start border-0">
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"
+            ></span>
+            <span class="sr-only">수신감도</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"
+            ></span>
+            <span class="sr-only">데이터 종류</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"
+            ></span>
+            <span class="sr-only">배터리 잔량</span>
+          </li>
+        </ul>
+      </div>
+      <div class="relative flex justify-start items-center gap-x-2 w-full h-10 px-4 pb-2">
+        <div
+          class="grow relative z-[1] before:content-[''] before:absolute before:w-0 before:h-0 before:ml-[1.875rem] before:-mt-px before:right-[15px] before:top-2/4"
+        >
+          <label
+            for="headerSelect"
+            class="absolute w-4/5 z-[-1] text-lg font-bold py-2 top-[0.1875rem]"
+            >남가좌제2동<span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-70px] ml-[0.3125rem]"
+            ></span></label
+          ><select
+            id="headerSelect"
+            class="w-full h-auto leading-[normal] opacity-0 appearance-none px-[0.8125rem] py-2 border-0"
+          >
+            <option value="남가좌제1동">남가좌제1동</option>
+            <option value="남가좌제2동" selected>남가좌제2동</option>
+            <option value="북가좌제1동">북가좌제1동</option>
+            <option value="북가좌제2동">북가좌제2동</option>
+            <option value="연희동">연희동</option>
+            <option value="신촌동">신촌동</option>
+          </select>
+        </div>
+        <ul class="flex w-[86px] h-[26px] justify-evenly mt-3">
+          <li class="w-[25px] h-[25px] pl-2.5">
+            <a
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-196px_-8px] ml-[0.3125rem] mt-1"
+              href="./search.html"
+              aria-label="검색"
+              tabindex="0"
+            ></a>
+          </li>
+          <li class="w-[25px] h-[25px] pl-2.5">
+            <a
+              class="inline-block bg-[url('./../../assets/icons/board_hamburgerIcon.png')] bg-no-repeat w-5 h-5 ml-[0.1875rem] mt-0.5"
+              href="#"
+              aria-label="메뉴"
+              tabindex="0"
+            ></a>
+          </li>
+          <li class="w-[25px] h-[25px] pl-2.5">
+            <a
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-269px_-116px] ml-[0.3125rem] mt-1"
+              href="#"
+              aria-label="알림"
+              tabindex="0"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div
+        class="subjectBar px-3 py-2 border-b-[0.01875rem] border-y-[#919191] border-t border-solid flex items-stretch flex-nowrap flex-row justify-between"
+      >
+        <button
+          class="subjectList border text-[0.66rem] bg-transparent no-underline cursor-pointer px-2.5 py-1.5 rounded-[20px] auto border-solid border-[#9DA1B4]"
+          onclick="location.href='#'"
+        >
+          주제
+        </button>
+        <button
+          class="subjectFavorite border text-[0.66rem] bg-transparent no-underline cursor-pointer px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+        >
+          인기글
+        </button>
+        <button
+          class="subjectTogether border text-[0.66rem] bg-transparent no-underline cursor-pointer px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+        >
+          <a href="./boardSub.html">같이해요</a>
+        </button>
+        <button
+          class="subjectQna border text-[0.66rem] bg-transparent no-underline cursor-pointer px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+          onclick="location.href='qna.html'"
+        >
+          <a href="./../qna/index.html"> 질의응답</a>
+        </button>
+        <button
+          class="subjectBoard border text-[0.66rem] bg-transparent no-underline cursor-pointer px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+        >
+          자유게시판
+        </button>
+      </div>
+
+      <div class="boardWrap">
+        <section
+          class="boardSection box-border p-3 flex justify-between items-stretch flex-nowrap flex-row border-b-[0.01875rem] border-b-[#919191] border-solid"
+        >
+          <div class="boardContainer w-[190px]">
+            <span
+              class="boardLabel text-white bg-[#c4c7d2] rounded px-1 py-0 text-[0.625rem] font-[400]"
+              >같이해요</span
+            >
+            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block text-sm">
+              <a href="#">youtube 클론 프젝 같이 하실분~!</a>
+            </h3>
+            <div class="flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1">
+              <img
+                src="./../../assets/icons/board_fullpeopleIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="누구나 참여가능"
+              />
+              <p class="boardPeople text-[#9DA1B4] text-[0.625rem] font-[400]">누구나 참여가능</p>
+            </div>
+            <div class="flex justify-start items-stretch flex-nowrap flex-row h-[13px] my-1">
+              <img
+                src="./../../assets/icons/board_calenderIcon.png"
+                class="bd-cover w-[13px] mr-1"
+                alt="누구나 참여가능"
+              />
+              <p class="text-[#9DA1B4] text-[0.625rem] font-[400]">
+                <span class="calenderSprite" aria-hidden="true"></span>
+                내일, 오후 7:00
+              </p>
+            </div>
+            <p class="text-[#9DA1B4] text-[0.625rem] font-[400]">응암제 3동 • 9분 전</p>
+          </div>
+          <div
+            class="ml-auto mr-0 mt-auto mb-0 flex justify-start items-stretch flex-nowrap flex-row h-[13px]"
+          >
+            <span
+              class="counterSprite inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-83px_-153px]"
+              aria-hidden="true"
+            ></span>
+            <p class="boardCounter text-[#9DA1B4] text-[0.625rem] font-[400]">1/3명</p>
+          </div>
+        </section>
+
+        <section
+          class="boardSection border-b-[0.01875rem] border-b-[#919191] border-solid box-border p-3 flex justify-between items-stretch flex-nowrap flex-row"
+        >
+          <div class="boardContainer w-[190px]">
+            <span
+              class="boardLabel text-white bg-[#c4c7d2] rounded px-1 py-0 text-[0.625rem] font-[400]"
+              >질의응답</span
+            >
+            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block text-sm">
+              <a href="#">아니 디버깅 돌려봤는데도 왜 이렇게 나오는거죠 대체</a>
+            </h3>
+            <p
+              class="whitespace-nowrap overflow-hidden text-ellipsis block text-[#9DA1B4] text-[0.625rem] font-[400] my-1"
+            >
+              내가 혼자 게임 만들려고 코드 짰는ㄷ ㅔ 왜 이런거야 나는 똥손인가 코드를 이렇게 짜는 걸
+              보니 똥손이 맞는가보다 심지어 챗 지피티도 모르겠다고 한다. 개발자라고 할 수 있을까
+              하늘도 무심하시지 ..
+            </p>
+            <p class="text-[#9DA1B4] text-[0.625rem] font-[400]">연희동 • 49분 전 • 조회 4</p>
+          </div>
+          <p class="w-[60px] h-[60px] rounded-[5px] relative inine-block">
+            <img
+              src="./../../assets/icons/board_viewImage.png"
+              class="absolute -translate-x-2/4 -translate-y-2/4 max-w-full max-h-full left-2/4 top-2/4"
+              alt="미리보기 사진"
+            />
+          </p>
+        </section>
+
+        <section
+          class="boardSection border-b-[0.01875rem] border-b-[#919191] border-solid box-border p-3 flex justify-between items-stretch flex-nowrap flex-row"
+        >
+          <div class="boardContainer w-[190px]">
+            <span
+              class="boardLabel text-white bg-[#c4c7d2] rounded px-1 py-0 text-[0.625rem] font-[400]"
+              >질의응답</span
+            >
+            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block text-sm">
+              <a href="#">깊은 복사 얕은 복사의 차이를 모르곘어요 ㅠㅠ</a>
+            </h3>
+            <p
+              class="whitespace-nowrap overflow-hidden text-ellipsis block text-[#9DA1B4] text-[0.625rem] font-[400] my-1"
+            >
+              제가 이해한 내용은 얕은 복사는 메모리를 공유하는 거 잖아요?
+            </p>
+            <p class="text-[#9DA1B4] text-[0.625rem] font-[400]">남가좌동 • 15분 전 • 조회 12</p>
+          </div>
+        </section>
+
+        <section
+          class="boardSection border-b-[0.01875rem] border-b-[#919191] border-solid box-border p-3 flex justify-between items-stretch flex-nowrap flex-row"
+        >
+          <div class="boardContainer w-[190px]">
+            <span
+              class="boardLabel text-white bg-[#c4c7d2] rounded px-1 py-0 text-[0.625rem] font-[400]"
+              >질의응답</span
+            >
+            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block text-sm">
+              <a href="#">CSS flex 중앙정렬 justify-content에서 뭐 줘야해요?</a>
+            </h3>
+            <p
+              class="whitespace-nowrap overflow-hidden text-ellipsis block text-[#9DA1B4] text-[0.625rem] font-[400] my-1"
+            >
+              figma보고 코드 짰는데 기억이 안나네;;;;
+            </p>
+            <p class="text-[#9DA1B4] text-[0.625rem] font-[400]">남가좌제2동 • 1일 전 • 조회 13</p>
+          </div>
+          <p class=""></p>
+        </section>
+
+        <section
+          class="boardSection border-b-[0.01875rem] border-b-[#919191] border-solid box-border p-3 flex justify-between items-stretch flex-nowrap flex-row"
+        >
+          <div class="boardContainer w-[190px]">
+            <span
+              class="boardLabel text-white bg-[#c4c7d2] rounded px-1 py-0 text-[0.625rem] font-[400]"
+              >자유게시판</span
+            >
+            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block text-sm">
+              <a href="#">오늘 점심 뭐먹? 점메추~~~</a>
+            </h3>
+            <p
+              class="whitespace-nowrap overflow-hidden text-ellipsis block text-[#9DA1B4] text-[0.625rem] font-[400] my-1"
+            >
+              코드 공부하다 연희동 근처에서 밥먹을건데 밥은 님이 사주셔야합니다
+            </p>
+            <p class="text-[#9DA1B4] text-[0.625rem] font-[400]">연희동 • 49분 전 • 조회 4</p>
+          </div>
+          <p class="w-[60px] h-[60px] rounded-[5px] relative inine-block">
+            <img
+              src="./../../assets/icons/board_viewImage.png"
+              class="absolute -translate-x-2/4 -translate-y-2/4 max-w-full max-h-full left-2/4 top-2/4"
+              alt="미리보기 사진"
+            />
+          </p>
+        </section>
+
+        <section
+          class="boardSection border-b-[0.01875rem] border-b-[#919191] border-solid box-border p-3 flex justify-between items-stretch flex-nowrap flex-row"
+        >
+          <div class="boardContainer w-[190px]">
+            <span
+              class="boardLabel text-white bg-[#c4c7d2] rounded px-1 py-0 text-[0.625rem] font-[400]"
+              >자유게시판</span
+            >
+            <h3 class="whitespace-nowrap overflow-hidden text-ellipsis block text-sm">
+              <a href="#">짜증을 내어서 무얼하나 ~~~~ </a>
+            </h3>
+            <p
+              class="whitespace-nowrap overflow-hidden text-ellipsis block text-[#9DA1B4] text-[0.625rem] font-[400] my-1"
+            >
+              열심히 해야지 모 방법 있겠냐구 화이팅 슈퍼 샤이
+            </p>
+            <p class="text-[#9DA1B4] text-[0.625rem] font-[400]">연희동 • 49분 전 • 조회 4</p>
+          </div>
+          <p class="w-[60px] h-[60px] rounded-[5px] relative inine-block">
+            <img
+              src="./../../assets/icons/board_viewImage.png"
+              class="absolute -translate-x-2/4 -translate-y-2/4 max-w-full max-h-full left-2/4 top-2/4"
+              alt="미리보기 사진"
+            />
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <nav
+      class="bottomNav bg-white sticky min-w-xs max-w-xs border-r-2 border-r-[rgb(214,214,214)] border-solid bottom-0 border shadow-md rounded-t-lg z-10 b"
+    >
+      <h2 class="sr-only">메뉴</h2>
+      <ul
+        class="z-10 min-w-xs max-w-xs flex justify-between gap-4 bg-white items-stretch font-normal text-[0.6875rem] fixed mx-auto pt-0 pb-2 pr-2 bottom-0 left-0 right-0 border"
+      >
+        <li class="flex-1">
+          <a
+            href="./main.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[0px_-74px]"
+            ></span>
+            <span>홈</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href="../board/board.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-72px_-46px]"
+            ></span>
+            <span><a href="#">게시판</a></span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href="./exchange.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-106px_-91px]"
+            ></span>
+            <span>내 근처</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href="../qna/chatlists.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-51px_-73px]"
+            ></span>
+            <span>채팅</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href="../profile/profile.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-99px_-46px]"
+            ></span>
+            <span>나의 이름</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

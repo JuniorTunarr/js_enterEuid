@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+      type="image/xml+svg"
+    />
+
+    <link rel="stylesheet" href="../../css/main.css" />
+    <script src="../../js/main.js" type="module"></script>
+    <title>project</title>
+  </head>
+
+  <body>
+    <header>
+      <h2 class="sr-only">기본 정보</h2>
+      <div class="flex justify-between items-center pt-2 px-4">
+        <time class="inline-block text-sm font-semibold" datetime="2023-08-01T23:59">2:26</time>
+        <ul class="flex justify-start items-start border-0">
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"
+            ></span>
+            <span class="sr-only">수신감도</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"
+            ></span>
+            <span class="sr-only">데이터 종류</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"
+            ></span>
+            <span class="sr-only">배터리 잔량</span>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="studyRecruit pl-3 pb-0">
+      <div
+        class="py-3 my-4 bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-98px]"
+      ></div>
+
+      <h2 class="studyRecruitSubject h-[46px] pl-6 text-[1.1875rem] font-semibold">
+        EUID 피그마 스터디 하실 분!
+      </h2>
+      <div
+        class="grow relative z-[1] before:content-[''] before:absolute before:w-0 before:h-0 before:ml-[1.875rem] before:-mt-px before:right-[15px] before:top-2/4 pb-5"
+      >
+        <label for="headerSelect" class="absolute w-full z-[-1] text-sm py-2 top-[0.1875rem]"
+          >카테고리를 선택해주세요<span
+            class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-70px] ml-[45%]"
+          ></span> </label
+        ><select
+          id="headerSelect"
+          class="w-full h-auto leading-[normal] opacity-0 appearance-none px-[0.8125rem] py-2 border-0"
+        >
+          <option value="select">카테고리를 선택해주세요.</option>
+          <option value="study">스터디</option>
+          <option value="project">프로젝트</option>
+          <option value="offline">오프라인</option>
+          <option value="award">공모전</option>
+          <option value="cowork">협업</option>
+          <option value="best">멋사</option>
+        </select>
+      </div>
+
+      <div class="relative text-[0.65625rem] border-y-[0.3px] border-y-[#919191] border-solid mr-3">
+        <label for="inputOn"></label>
+        <input
+          type="text"
+          class="w-full h-[57px] text-[0.625rem] font-normal"
+          id="inputOn"
+          placeholder="활동 내용을 입력해주세요."
+        />
+      </div>
+      <ul class="text-sm">
+        <li class="flex flex-nowrap flex-row pr-2 h-[46px] items-center justify-between">
+          <div class="h-[16px] flex">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-194px_-108px]"
+            ></span>
+            인원
+          </div>
+          <div class="flex flex-nowrap flex-row h-[16px] items-center justify-between">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-268px_-48px]"
+            ></span>
+
+            <span class="mx-[6px] mb-1 pr-1">4명</span>
+            <span
+              class="inline-block bg-[url('./../../assets/icons/board_borderplusIcon.png')] bg-no-repeat w-5 h-5"
+            ></span>
+          </div>
+        </li>
+        <li class="flex flex-nowrap flex-row pr-3 h-[46px] items-center justify-between">
+          <div class="flex flex-nowrap flex-row pr-2 h-[46px] items-center justify-betweens">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-81px_-126px]"
+            ></span>
+            <div>날짜</div>
+          </div>
+          <div tabindex="0">오늘</div>
+        </li>
+        <li class="flex flex-nowrap flex-row pr-3 h-[46px] items-center justify-between">
+          <div class="flex flex-nowrap flex-row h-[46px] items-center justify-betweens">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-4px_-288px]"
+            ></span>
+            <div>시간</div>
+          </div>
+          <div tabindex="0">오후 8:00</div>
+        </li>
+        <li class="flex flex-nowrap flex-row pr-2 h-[46px] items-center justify-between">
+          <div class="flex flex-nowrap flex-row h-[46px] items-center justify-betweens">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-106px_-90px]"
+            ></span>
+            <div>장소</div>
+          </div>
+          <div>
+            <label for="location"></label>
+            <input
+              class="text-right appearance-none"
+              type="text"
+              id="location"
+              placeholder="입력해주세요"
+            />
+          </div>
+        </li>
+      </ul>
+    </main>
+    <button
+      class="nextButton ml-3 bg-[#373F67] text-[white] text-sm w-[295px] h-[45px] fixed mt-6 mb-[2.125rem] mr-[3.75%] rounded-lg border-0 bottom-[2.125rem]"
+      onclick="location.href='./boardContent.html'"
+    >
+      다음
+    </button>
+  </body>
+</html>

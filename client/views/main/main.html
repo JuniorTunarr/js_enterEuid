@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super 4y 엔터이듬</title>
+    <link
+      rel="icon"
+      href="./../../assets/icons/icons/favicon.ico"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet preload"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./../../css/main.css" />
+    <script src="./../../js/main/main.js" defer></script>
+  </head>
+
+  <body>
+    <h1 class="sr-only">엔터이듬</h1>
+
+    <header>
+      <h2 class="sr-only">기본 정보</h2>
+      <div class="flex justify-between items-center pt-2 px-4">
+        <time class="inline-block text-sm font-semibold" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="flex justify-start items-start border-0">
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"
+            ></span>
+            <span class="sr-only">수신감도</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"
+            ></span>
+            <span class="sr-only">데이터 종류</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"
+            ></span>
+            <span class="sr-only">배터리 잔량</span>
+          </li>
+        </ul>
+      </div>
+      <div class="relative flex justify-start items-center gap-x-2 w-full h-10 px-4 pb-2">
+        <div
+          class="grow relative z-[1] before:content-[''] before:absolute before:w-0 before:h-0 before:ml-[1.875rem] before:-mt-px before:right-[15px] before:top-2/4"
+        >
+          <label
+            for="headerSelect"
+            class="absolute w-4/5 z-[-1] text-lg font-bold py-2 top-[0.1875rem]"
+            >남가좌제2동<span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-70px] ml-[0.3125rem]"
+            ></span></label
+          ><select
+            id="headerSelect"
+            class="w-full h-auto leading-[normal] opacity-0 appearance-none px-[0.8125rem] py-2 border-0"
+          >
+            <option value="남가좌제1동">남가좌제1동</option>
+            <option value="남가좌제2동" selected>남가좌제2동</option>
+            <option value="북가좌제1동">북가좌제1동</option>
+            <option value="북가좌제2동">북가좌제2동</option>
+            <option value="연희동">연희동</option>
+            <option value="신촌동">신촌동</option>
+          </select>
+        </div>
+        <ul class="flex w-[86px] h-[26px] justify-evenly mt-3">
+          <li class="w-[25px] h-[25px] pl-2.5">
+            <a
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-196px_-8px] ml-[0.3125rem] mt-1"
+              href="./search.html"
+              aria-label="검색"
+              tabindex="0"
+            ></a>
+          </li>
+          <li class="w-[25px] h-[25px] pl-2.5">
+            <a
+              class="inline-block bg-[url('./../../assets/icons/main_hamburger.svg')] bg-no-repeat w-5 h-5 ml-[0.1875rem] mt-0.5"
+              href="#"
+              aria-label="메뉴"
+              tabindex="0"
+            ></a>
+          </li>
+          <li class="w-[25px] h-[25px] pl-2.5">
+            <a
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-269px_-116px] ml-[0.3125rem] mt-1"
+              href="#"
+              aria-label="알림"
+              tabindex="0"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <nav
+      class="bottomNav bg-white sticky min-w-xs max-w-xs border-r-2 border-r-[rgb(214,214,214)] border-solid bottom-0 border shadow-md rounded-t-lg z-10 b"
+    >
+      <h2 class="sr-only">메뉴</h2>
+      <ul
+        class="z-10 min-w-xs max-w-xs flex justify-between gap-4 bg-white items-stretch font-normal text-[0.6875rem] fixed mx-auto pt-0 pb-2 pr-2 bottom-0 left-0 right-0 border"
+      >
+        <li class="flex-1">
+          <a
+            href="./main.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[0px_-74px]"
+            ></span>
+            <span>홈</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href="../board/index.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-72px_-46px]"
+            ></span>
+            <span><a href="../board/index.html">게시판</a></span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href="./exchange.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-106px_-91px]"
+            ></span>
+            <span>내 근처</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href="../qna/chatlists.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-51px_-73px]"
+            ></span>
+            <span>채팅</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href="../profile/profile.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-99px_-46px]"
+            ></span>
+            <span>나의 이름</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h2 class="sr-only">메인 메뉴</h2>
+
+      <section class="swiper w-[320px] h-[255px] relative">
+        <div class="swiper-container">
+          <div class="swiper-wrapper" id="swiper-wrapper"></div>
+
+          <div
+            class="swiper-button-prev w-10 h-10 bg-no-repeat bg-center z-[999]"
+            style="background-image: url('./../../assets/icons/main_arrow.png')"
+          ></div>
+          <div
+            class="swiper-button-next w-10 h-10 bg-no-repeat bg-center z-[999] transform scale-[-1]"
+            style="background-image: url('./../../assets/icons/main_arrow.png')"
+          ></div>
+        </div>
+        <div class="pagination_container flex justify-center top-[-25px] left-2 relative gap-3">
+          <div class="swiper-pagination w-[50px] relative text-white"></div>
+          <div class="swiper-pagination2 h-3 bottom-auto mt-[0.125rem] mr-6 z-10 relative"></div>
+        </div>
+      </section>
+      <nav class="topNav">
+        <h3 class="sr-only">헤더 네비게이션</h3>
+        <ul
+          class="w-full text-[rgba(255,255,255,0.5)] flex justify-around items-stretch font-normal gap-2 px-2 py-2.5 bg-[#373f67]"
+        >
+          <li class="mainList">
+            <a href="./main.html" class="text-sm py-1 font-semibold text-[white]">선배님 스토리</a>
+          </li>
+          <li class="mainList">
+            <a href="./exchange.html" class="text-sm py-2">기기 거래</a>
+          </li>
+          <li class="mainList">
+            <a href="../qna/index.html" class="text-sm py-2">질의 응답</a>
+          </li>
+          <li class="mainList">
+            <a href="#" class="text-sm py-2">함께 해요</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="story">
+        <h2 class="sr-only">선배님 스토리</h2>
+        <ul
+          class="storyList flex flex-wrap mt-3 mb-[1rem] px-3 py-0 h-[600px] overflow-y gap-4"
+        ></ul>
+      </section>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>

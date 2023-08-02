@@ -5,3 +5,5 @@ export * from './memo.js';
 export * from './typeOf.js';
 export * from './tiger.js';
 export * from './storage.js';
+export * from './debounce.js';
+export * from './stringFilter.js';

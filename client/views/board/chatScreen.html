@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./../../assets/icons/favicon.ico" type="image/x-icon" sizes="16x16" />
+
+    <link rel="stylesheet" href="../../css/main.css" />
+    <script src="./../../js/board/chat.js" defer></script>
+    <title>project</title>
+  </head>
+
+  <body class="relative border-box">
+    <div class="h-full absolute">
+      <header class="absolute t-0 z-10 bg-white">
+        <h2 class="sr-only">기본 정보</h2>
+        <div class="flex justify-between items-center pt-2 px-4">
+          <time class="inline-block text-sm font-semibold" datetime="2023-08-01T23:59">2:26</time>
+          <ul class="flex justify-start items-start border-0">
+            <li class="cellItem">
+              <span
+                class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"
+              ></span>
+              <span class="sr-only">수신감도</span>
+            </li>
+            <li class="cellItem">
+              <span
+                class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"
+              ></span>
+              <span class="sr-only">데이터 종류</span>
+            </li>
+            <li class="cellItem">
+              <span
+                class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"
+              ></span>
+              <span class="sr-only">배터리 잔량</span>
+            </li>
+          </ul>
+        </div>
+        <div class="pb-0 w-80 px-3 block bg-white">
+          <div class="flex flex-nowrap flex-row items-stretch justify-between">
+            <div
+              class="py-3 my-4 bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-98px]"
+            ></div>
+            <h2 class="subjectTitle py-4 pl-3 text-sm">
+              EUID 피그마 스터디 하실 분 ~ <span class="font-semibold text-[rosybrown]">1</span>
+            </h2>
+            <div class="my-2.5 pr-1">
+              <div
+                class="inline-block my-4 bg-[url('./../../assets/icons/board_hamburgerIcon.png')] bg-no-repeat w-5 h-5 ml-[0.1875rem] mt-0.5"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main class="pb-0 w-80 px-5 fixed bottom-0 border-box">
+      <!--!      chat function works       -->
+      <div class="">
+        <div class="max-h-[763px]">
+          <div class="scroll mt-16 max-h-[620px]">
+            <div class="myChat flex flex-col items-end justify-center gap-2 pt-9">
+              <div class="chatarea w-full flex justify-end">
+                <div class="chatContents chatSend flex items-end gap-[0.2rem] py-0">
+                  <p
+                    class="chatMessage text-[white] text-paragraph-Medium leading-lh-160 px-3.5 py-2 rounded-[5px] bg-blue-400"
+                  >
+                    안녕하세요 스터디 마감인가요 ?
+                  </p>
+                </div>
+              </div>
+              <div class="w-full flex justify-start">
+                <div class="chatContents chatSend flex py-0">
+                  <p
+                    class="chatMessage text-paragraph-Medium leading-lh-160 px-3.5 py-2 rounded-[5px] bg-slate-100"
+                  >
+                    아뇨 아직
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form
+          name="chatMessageForm"
+          action="/"
+          method="POST"
+          class="chatMessageForm z-10 min-w-xs max-w-xs flex justify-between gap-4 bg-white items-stretch font-normal text-[0.6875rem] mx-auto pt-0 pb-2 pr-2 left-0 right-0 border bottom-0 absolute"
+        >
+          <fieldset>
+            <legend class="sr-only">채팅 메세지 입력 폼</legend>
+            <ul
+              class="messageInputList flex justify-end items-center gap-1.5 pl-2 pr-3 pt-3 pb-[1.875rem]"
+            >
+              <li
+                class="sprite inline-block bg-[url('./../../assets/icons/board_chatplusIcon.png')] bg-no-repeat w-5 h-5 spritePlus"
+              ></li>
+              <li class="messageSendInput">
+                <label for="messageInput" class="sr-only">입력창</label>
+                <input
+                  type="text"
+                  id="messageInput"
+                  name="messageInput"
+                  class="messageInputBar text-paragraph-normal leading-lh-160 text-contentTertiary w-[16rem] mt-1 px-3 py-2 rounded-[20px] border-0 bg-[#EBECF0]"
+                  required
+                  placeholder="메세지 보내기"
+                />
+                <!-- <input type="text" id="comment37" class="px-3 py-2  block rounded-[20px] border-[none] bg-[#EBECF0] sm:w-48" placeholder="메세지를 입력하세요"> -->
+              </li>
+              <li>
+                <button type="submit" class="send" data-name="send">
+                  <span
+                    class="icon--send inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-4 h-4 bg-[-240px_-227px] spriteSend"
+                  ></span>
+                </button>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

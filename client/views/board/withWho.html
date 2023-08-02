@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+      type="image/xml+svg"
+    />
+
+    <link rel="stylesheet" href="../../css/main.css" />
+    <script src="../../js/main.js" type="module"></script>
+    <title>project</title>
+  </head>
+
+  <body>
+    <header>
+      <h2 class="sr-only">기본 정보</h2>
+      <div class="flex justify-between items-center pt-2 px-4">
+        <time class="inline-block text-sm font-semibold" datetime="2023-08-01T23:59">2:26</time>
+        <ul class="flex justify-start items-start border-0">
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"
+            ></span>
+            <span class="sr-only">수신감도</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"
+            ></span>
+            <span class="sr-only">데이터 종류</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"
+            ></span>
+            <span class="sr-only">배터리 잔량</span>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="pl-3 pb-0">
+      <div
+        class="py-3 my-4 bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-98px]"
+      ></div>
+      <h2 class="h-[46px] pl-6 text-[1.1875rem] font-semibold">어떤 학생과 함께 할까요?</h2>
+
+      <ul class="">
+        <li class="flex flex-nowrap flex-row pr-2 h-[46px] items-center justify-between text-sm">
+          <div class="h-[16px] flex">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-77px_-178px]"
+            ></span>
+            성별
+          </div>
+          <div class="flex flex-nowrap flex-row h-[16px] items-center justify-between">
+            <span class="mx-[6px] mb-1 pr-1">누구나</span>
+          </div>
+        </li>
+        <li class="withSelect text-[0.65625rem]">
+          <p class="withDescription text-[#9DA1B4] mx-0 my-2">
+            누구나 또는 같은 성별 모임으로 설정해주세요.
+          </p>
+          <button
+            class="withAnybody border text-[0.66rem] bg-transparent no-underline cursor-pointer mb-[0.6875rem] px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+          >
+            누구나
+          </button>
+          <button
+            class="withFemale border text-[0.66rem] bg-transparent no-underline cursor-pointer mb-[0.6875rem] px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+          >
+            여자만
+          </button>
+          <button
+            class="withMale border text-[0.66rem] bg-transparent no-underline cursor-pointer mb-[0.6875rem] px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+          >
+            남자만
+          </button>
+        </li>
+        <li class="flex flex-nowrap flex-row pr-2 h-[46px] items-center justify-between text-sm">
+          <div class="h-[16px] flex">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-194px_-108px]"
+            ></span>
+            나이
+          </div>
+
+          <span class="mx-[6px] mb-1 pr-1">누구나</span>
+        </li>
+        <li class="flex flex-nowrap flex-row pr-4 h-[46px] items-center justify-between text-sm">
+          <div class="h-[16px] flex">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-108px_-203px]"
+            ></span>
+            승인 후 참여
+          </div>
+          <input type="checkbox" id="toggle" hidden />
+
+          <label
+            for="toggle"
+            class="toggleSwitch w-11 h-6 block relative bg-gray-300 cursor-pointer rounded-[30px]"
+          >
+            <span
+              class="toggleButton w-4 h-4 absolute -translate-y-2/4 bg-gray-400 rounded-[50%] left-1 top-2/4"
+            ></span>
+          </label>
+        </li>
+      </ul>
+    </main>
+    <button
+      class="nextButton ml-3 bg-[#373F67] text-[white] text-sm w-[295px] h-[45px] fixed mt-6 mb-[2.125rem] mr-[3.75%] rounded-lg border-0 bottom-[2.125rem]"
+      onclick="location.href='./boardContent.html.html'"
+    >
+      일정만들기
+    </button>
+  </body>
+</html>

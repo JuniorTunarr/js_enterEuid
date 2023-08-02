@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super 4y 엔터이듬</title>
+    <link rel="icon" href="./../../assets/icons/favicon.ico" type="image/x-icon" sizes="16x16" />
+    <link
+      rel="stylesheet preload"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <link rel="stylesheet" href="./../../css/main.css" />
+    <script type="module" src="./../../js/main/search.js"></script>
+  </head>
+
+  <body>
+    <h1 class="sr-only">엔터이듬</h1>
+
+    <header>
+      <h2 class="sr-only">기본 정보</h2>
+      <div class="flex justify-between items-center pt-2 px-4">
+        <time class="inline-block text-sm font-semibold" datetime="2023-08-01T23:59">2:26</time>
+        <ul class="flex justify-start items-start border-0">
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[0.3125rem]"
+            ></span>
+            <span class="sr-only">수신감도</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"
+            ></span>
+            <span class="sr-only">데이터 종류</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[0.3125rem]"
+            ></span>
+            <span class="sr-only">배터리 잔량</span>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="pt-2 pb-3 px-4 flex justify-between items-center w-full z-10">
+        <div class="flex-shrink-0 mt-2">
+          <span
+            ><a
+              class="inline-block bg-[url('./../../assets/icons/main_left.svg')] bg-no-repeat w-[18px] h-[18px]"
+              href="javascript:history.back()"
+            ></a
+          ></span>
+        </div>
+        <form action="/" class="ml-3 mr-1 mt-1 w-full flex-grow">
+          <fieldset class="max-w-full">
+            <legend class="sr-only">검색 폼</legend>
+            <label for="search">
+              <span class="sprite spriteBack searchHeaderBack"></span
+              ><span class="sr-only">검색</span>
+            </label>
+            <input
+              type="search"
+              id="search"
+              class="searchInput w-full max-w-full bg-[#e9e9e9] px-2.5 py-1.5 rounded-[5px] border-0"
+              placeholder="창천동 근처에서 검색"
+            />
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="searchContent max-w-xs relative">
+        <h2 class="sr-only">많이 찾는 검색어</h2>
+        <p class="searchRecommend text-sm font-semibold leading-[1.5%] pl-3 py-3">
+          친구들이 많이 찾고 있어요!
+        </p>
+        <ul class="searchList flex justify-start items-stretch gap-x-1 mt-3 pl-3">
+          <li class="searchItem">
+            <button
+              type="button"
+              class="searchKeyword text-[0.625rem] leading-[160%] px-2.5 py-1.5 rounded-[1.25rem] border border-[#919191]"
+            >
+              노트북
+            </button>
+          </li>
+          <li class="searchItem">
+            <button
+              type="button"
+              class="searchKeyword text-[0.625rem] leading-[160%] px-2.5 py-1.5 rounded-[1.25rem] border border-[#919191]"
+            >
+              노트북 거치대
+            </button>
+          </li>
+          <li class="searchItem">
+            <button
+              type="button"
+              class="searchKeyword text-[0.625rem] leading-[160%] px-2.5 py-1.5 rounded-[1.25rem] border border-[#919191]"
+            >
+              키보드
+            </button>
+          </li>
+          <li class="searchItem">
+            <button
+              type="button"
+              class="searchKeyword text-[0.625rem] leading-[160%] px-2.5 py-1.5 rounded-[1.25rem] border border-[#919191]"
+            >
+              마우스
+            </button>
+          </li>
+          <li class="searchItem">
+            <button
+              type="button"
+              class="searchKeyword text-[0.625rem] leading-[160%] px-2.5 py-1.5 rounded-[1.25rem] border border-[#919191]"
+            >
+              헤드셋
+            </button>
+          </li>
+        </ul>
+      </div>
+      <ul class="exchangeList flex overflow-y-scroll flex-col flex-nowrap relative"></ul>
+      <div
+        class="keyBoardWrap fixed inset-0 max-w-[320px] mx-auto pointer-events-none keyBoardWrap opacity-0 transition-opacity duration-300 ease-in-out"
+      >
+        <button
+          type="submit"
+          class="submitButton leading-normal text-sm text-[#5A85EE] absolute border-0 right-4 bottom-[255px] bg-[transparent]"
+        >
+          완료
+        </button>
+        <img
+          src="./../../assets/images/main/iOS.svg"
+          alt="ios 키보드"
+          class="w-[320px] h-[248px] absolute bottom-0 left-0 right-0 mx-auto"
+        />
+      </div>
+    </main>
+  </body>
+</html>
