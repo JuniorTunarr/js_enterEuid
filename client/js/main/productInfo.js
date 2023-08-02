@@ -70,7 +70,7 @@ function renderProductInfo() {
     </p>
     <ul class="relatedList flex gap-3 flex-wrap pt-1 pb-4 px-3.5">
       <li class="relatedItem w-[138px] pb-2">
-        <a href="/" class="relatedLink">
+        <a href="#" class="relatedLink">
           <img
             src="./../../assets/images/main/storyBg.png"
             alt="상품이미지"
@@ -85,7 +85,7 @@ function renderProductInfo() {
         </a>
       </li>
       <li class="relatedItem w-[138px] pb-2">
-        <a href="/" class="relatedLink">
+        <a href="#" class="relatedLink">
           <img
             src="./../../assets/images/main/storyBg.png"
             alt="상품이미지"
@@ -100,7 +100,7 @@ function renderProductInfo() {
         </a>
       </li>
       <li class="relatedItem w-[138px] pb-2">
-        <a href="/" class="relatedLink">
+        <a href="#" class="relatedLink">
           <img
             src="./../../assets/images/main/storyBg.png"
             alt="상품이미지"
@@ -115,7 +115,7 @@ function renderProductInfo() {
         </a>
       </li>
       <li class="relatedItem w-[138px] pb-2">
-        <a href="/" class="relatedLink">
+        <a href="#" class="relatedLink">
           <img
             src="./../../assets/images/main/storyBg.png"
             alt="상품이미지"

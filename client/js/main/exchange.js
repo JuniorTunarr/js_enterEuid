@@ -40,7 +40,7 @@ function renderExchangeGoods() {
                 <p class="text-sm">${item.title}</p>
                 <p class="text-[0.625rem] text-[#9da184] mt-0.5">
                   ${item.user.place}<span aria-hidden="true"> &middot; </span
-                  ><time datetime='2023-08-03T23:59'>${item.createdAt}</time>
+                  ><time datetime='2023-08-01T23:59'>${item.createdAt}</time>
                 </p>
                 <p class="mt-1">
                  ${dataStatus}

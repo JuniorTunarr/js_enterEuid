@@ -98,7 +98,7 @@ const handleInput = () => {
       } else {
         addClass(keyBoardWrap, 'opacity-0');
       }
-    }, 300),
+    }, 500),
   );
 
   inputContent.addEventListener('focus', () => {
