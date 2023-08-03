@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./../../assets/icons/favicon.ico" type="image/x-icon" sizes="16x16" />
+
+    <link rel="stylesheet" href="../../css/main.css" />
+    <script src="../../js/main.js" type="module"></script>
+    <title>project</title>
+  </head>
+
+  <body>
+    <header>
+      <h2 class="sr-only">기본 정보</h2>
+      <div class="flex justify-between items-center pt-2 px-4">
+        <time class="inline-block text-sm font-semibold" datetime="2023-08-01T23:59">2:26</time>
+        <ul class="flex justify-start items-start border-0">
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[5px]"
+            ></span>
+            <span class="sr-only">수신감도</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"
+            ></span>
+            <span class="sr-only">데이터 종류</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[5px]"
+            ></span>
+            <span class="sr-only">배터리 잔량</span>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="pl-3 pb-0">
+      <div
+        class="py-3 my-4 bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-98px]"
+      ></div>
+      <div class="activityWrap">
+        <label for="text" class="sr-only">활동</label>
+        <input
+          type="text"
+          class="w-[90%] text-[1.166rem] mt-0 mb-3 mx-[4%] border-[none]"
+          id="text"
+          placeholder="이웃과 어떤 활동을 할까요?"
+        />
+        <p class="activityRecommended font-semibold text-[0.66rem] my-3">
+          남가좌제2동 근처 인기활동
+        </p>
+        <div class="activityList">
+          <button
+            class="activityButton border text-[0.66rem] bg-transparent no-underline cursor-pointer mb-[0.6875rem] px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+          >
+            💻 같이 프로젝트해요
+          </button>
+          <button
+            class="activityButton border text-[0.66rem] bg-transparent no-underline cursor-pointer mb-[0.6875rem] px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+          >
+            📝 같이 스터디해요
+          </button>
+          <button
+            class="activityButton border text-[0.66rem] bg-transparent no-underline cursor-pointer mb-[0.6875rem] px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+          >
+            🍚 같이 밥먹어요
+          </button>
+          <button
+            class="activityButton border text-[0.66rem] bg-transparent no-underline cursor-pointer mb-[0.6875rem] px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+          >
+            ⌨️ 같이 Lv2.알고리즘 풀어요
+          </button>
+          <button
+            class="activityButton border text-[0.66rem] bg-transparent no-underline cursor-pointer mb-[0.6875rem] px-2.5 py-1.5 rounded-[20px] border-solid border-[#9DA1B4]"
+          >
+            🙈 오프라인으로 만나요
+          </button>
+        </div>
+      </div>
+    </main>
+    <button
+      class="nextButton ml-3 bg-[#373F67] text-[white] text-sm w-[295px] h-[45px] fixed mt-6 mb-[2.125rem] mr-[3.75%] rounded-lg border-0 bottom-[2.125rem]"
+      onclick="location.href='./withWho.html'"
+    >
+      다음
+    </button>
+  </body>
+</html>

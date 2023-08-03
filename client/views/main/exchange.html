@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super 4y 엔터이듬</title>
+    <link rel="icon" href="./../../assets/icons/favicon.ico" type="image/x-icon" sizes="16x16" />
+    <link
+      rel="stylesheet preload"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <link rel="stylesheet" href="./../../css/main.css" />
+    <script src="./../../js/main/exchange.js" type="module"></script>
+  </head>
+
+  <body>
+    <h1 class="sr-only">엔터이듬</h1>
+
+    <header>
+      <h2 class="sr-only">기본 정보</h2>
+      <div class="flex justify-between items-center pt-2 px-4">
+        <time class="inline-block text-sm font-semibold" datetime="2023-08-03T02:26">2:26</time>
+        <ul class="flex justify-start items-start border-0">
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-95px_-8px] ml-[0.3125rem]"
+            ></span>
+            <span class="sr-only">수신감도</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-121px_-7px]"
+            ></span>
+            <span class="sr-only">데이터 종류</span>
+          </li>
+          <li class="cellItem">
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-148px_-8px] ml-[0.3125rem]"
+            ></span>
+            <span class="sr-only">배터리 잔량</span>
+          </li>
+        </ul>
+      </div>
+      <div class="relative flex justify-start items-center gap-x-2 w-full h-10 px-4 pb-2">
+        <div
+          class="grow relative z-[1] before:content-[''] before:absolute before:w-0 before:h-0 before:ml-[1.875rem] before:-mt-px before:right-[15px] before:top-2/4"
+        >
+          <label
+            for="headerSelect"
+            class="absolute w-4/5 z-[-1] text-lg font-bold py-2 top-[0.1875rem]"
+            >남가좌제2동<span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-155px_-70px] ml-[0.3125rem]"
+            ></span></label
+          ><select
+            id="headerSelect"
+            class="w-full h-auto leading-[normal] opacity-0 appearance-none px-[0.8125rem] py-2 border-0"
+          >
+            <option value="남가좌제1동">남가좌제1동</option>
+            <option value="남가좌제2동" selected>남가좌제2동</option>
+            <option value="북가좌제1동">북가좌제1동</option>
+            <option value="북가좌제2동">북가좌제2동</option>
+            <option value="연희동">연희동</option>
+            <option value="신촌동">신촌동</option>
+          </select>
+        </div>
+        <ul class="flex w-[86px] h-[26px] justify-evenly mt-3 overflow-hidden">
+          <li class="w-[25px] h-[25px] pl-2.5">
+            <a
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-196px_-8px] ml-[0.3125rem] mt-1"
+              href="./search.html"
+              aria-label="검색"
+              tabindex="0"
+            ></a>
+          </li>
+          <li class="w-[25px] h-[25px] pl-2.5">
+            <a
+              class="inline-block bg-[url('./../../assets/icons/main_hamburger.svg')] bg-no-repeat w-5 h-5 ml-[0.1875rem] mt-0.5"
+              href="#"
+              aria-label="메뉴"
+              tabindex="0"
+            ></a>
+          </li>
+          <li class="w-[25px] h-[25px] pl-2.5">
+            <a
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-272px_-116px] ml-[0.25rem] mt-1"
+              href=""
+              aria-label="알림"
+              tabindex="0"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <nav
+      class="bg-white sticky min-w-xs max-w-xs border-t-[rgb(214,214,214)] border-t-0 border-solid bottom-0 border border-gray-200 shadow-md rounded-t-lg z-10"
+    >
+      <h2 class="sr-only">메뉴</h2>
+      <ul
+        class="z-10 min-w-xs max-w-xs flex justify-between gap-4 bg-white items-stretch font-normal text-[0.6875rem] fixed mx-auto pt-0 pb-2 pr-2 bottom-0 left-0 right-0 border"
+      >
+        <li class="flex-1">
+          <a
+            href="./main.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[0px_-74px]"
+            ></span>
+            <span>홈</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href="../board/index.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-72px_-46px]"
+            ></span>
+            게시판</a
+          >
+        </li>
+        <li class="flex-1">
+          <a
+            href="./exchange.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-106px_-91px]"
+            ></span>
+            <span>내 근처</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href="../qna/chatlists.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-51px_-73px]"
+            ></span>
+            <span>채팅</span>
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href="../profile/profile.html"
+            class="flex flex-col justify-center items-center gap-[0.1875rem] py-2"
+          >
+            <span
+              class="inline-block bg-[url('./../../assets/icons/sprite.svg')] bg-no-repeat w-5 h-5 bg-[-99px_-46px]"
+            ></span>
+            <span>나의 이름</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2 class="sr-only">메인 메뉴</h2>
+      <nav>
+        <h3 class="sr-only">메인페이지 네비게이션</h3>
+        <ul
+          class="w-full text-[rgba(255,255,255,0.5)] flex justify-around items-stretch font-normal gap-2 px-2 py-2.5 bg-[#373f67]"
+        >
+          <li class="mainList">
+            <a href="./main.html" class="text-sm py-1">선배님 스토리</a>
+          </li>
+          <li class="mainList">
+            <a href="./exchange.html" class="text-sm text-[white] py-2 font-semibold">기기 거래</a>
+          </li>
+          <li class="mainList">
+            <a href="/" class="text-sm py-2">질의 응답</a>
+          </li>
+          <li class="mainList">
+            <a href="/" class="text-sm py-2">함께 해요</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="relative w-[320px]">
+        <h2 class="sr-only">기기 거래</h2>
+        <ul class="exchangeList flex overflow-y-scroll flex-col flex-nowrap relative"></ul>
+        <button
+          onclick="javascript:void(0)"
+          class="plusButton flex items-center justify-center w-12 h-12 fixed bg-[#373f67] z-10 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] p-2 rounded-[50%] border-[none] right-[100px] bottom-[85px] hover:bg-white hover:text-[black] hover:shadow-[2px_4px_4px_2px_rgba(0,0,0,0.25)]"
+        >
+          <span class="inline-block text-white text-[2rem] mb-1">+</span>
+        </button>
+        <ul
+          class="exchangeWrite invisible opacity-0 fixed flex gap-3 right-[100px] bottom-[145px] flex-col"
+        >
+          <li class="w-[105px] bg-[#373f67] px-2 py-2.5 rounded-xl">
+            <a
+              href="productInfo.html"
+              class="text-[white] text-sm font-medium flex justify-center gap-[3px]"
+              ><span class="">🎧</span><span class="">헤드셋</span></a
+            >
+          </li>
+          <li class="w-[105px] bg-[#373f67] px-2 py-2.5 rounded-xl">
+            <a
+              href="productInfo.html"
+              class="text-[white] text-sm font-medium flex justify-center gap-[3px]"
+              ><span>⌨️</span><span>키보드</span></a
+            >
+          </li>
+          <li class="w-[105px] bg-[#373f67] px-2 py-2.5 rounded-xl">
+            <a
+              href="productInfo.html"
+              class="text-[white] text-sm font-medium flex justify-center gap-[3px]"
+              ><span>🖱️</span><span>마우스</span></a
+            >
+          </li>
+          <li class="w-[105px] bg-[#373f67] px-2 py-2.5 rounded-xl">
+            <a
+              href="productInfo.html"
+              class="text-[white] text-sm font-medium flex justify-center gap-[3px]"
+              ><span>💻</span><span>컴퓨터</span></a
+            >
+          </li>
+          <li class="w-[105px] bg-[#373f67] px-2 py-2.5 rounded-xl">
+            <a
+              href="productInfo.html"
+              class="text-[white] text-sm font-medium flex justify-center gap-[3px]"
+              ><span>🎈</span><span>기타 등등</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

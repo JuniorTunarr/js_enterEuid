@@ -1,0 +1,19 @@
+{
+  "build": {
+    "env": {
+      "TAILWIND_MODE": "build"
+    }
+  },
+  "routes": [
+    {
+      "src": "/css/(.*)",
+      "dest": "/client/css/$1"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "/api/:match"
+    }
+  ]
+}
